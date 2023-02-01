@@ -5,6 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><p>Planted</p></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Get in <span>touch</span></h1>
+      </div>
+    </header>
+    <main>
+      <section class="contact">
+        <div class="wrapper">
+          <h4> <strong>info@email.com</strong> </h4>
+          <ul>
+            <li>
+              <p>123 - 456- 7890</p>
+            </li>
+            <li>
+              <p>123 Queen Street West, Unit 10</p>
+            </li>
+            <li>
+              <p>Toronto, Ontario</p>
+            </li>
+            <li>
+              <p>M5V2D5</p>
+            </li>
+          </ul>
+          <form action="#" method="POST" name="ContactUs">
+              <label class="sr-only" for="Name">Name</label>
+              <input
+                type="text"
+                id="Name"
+                name="Name"
+                placeholder="Name"
+              />
+              <label class="sr-only" for="emailAddress">Email Address</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="Email Address"
+              />
+              <label class="sr-only" for="feedback">Please provide Feedback</label>
+              <textarea name="userFeedback" id="feedback" placeholder="Message" cols="45" rows="8"></textarea>
+              
+              <button type="submit">Submit</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+      <p>Copyright 2018 © HackerYou</p>
+    </div>
+    </footer>
+  </body>
 </html>
