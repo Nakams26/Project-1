@@ -1,0 +1,17 @@
+@use "partials/setup";
+@use "partials/footer";
+@use "partials/nav";
+@use "partials/headerIndex";
+@use "partials/variables" as *;
+
+p,
+a {
+  font-family: $secondaryFont;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $primaryFont;
+  font-weight: 700;
+}

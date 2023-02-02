@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $primaryBlack;
+    color: white;
+    height: 10vh;
+}
+

@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+.hIndex {
+  height: 100vh;
+  background-color: blue;
+  background-image: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.imgContainerHeader {
+  width: 600px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+// Changing color of home menu
+
+.Home {
+  color: $primaryYellow;
+}
+
+.hIndex h1 {
+  position: absolute;
+  left: 32%;
+  z-index: 10;
+  color: $primaryWhite;
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 8.3rem;
+  line-height: 6rem;
+}
+
+span {
+  display: block;
+  color: $primaryYellow;
+}

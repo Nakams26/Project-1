@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="hIndex">
       <div class="wrapper">
         <nav>
           <ul>
-          <li><p>Planted</p></li>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
+            <li><p class="title">Planted</p></li>
+            <li><a class="Home" href="./index.html">HOME</a></li>
+            <li><a class="About" href="#About">ABOUT</a></li>
+            <li><a class="Blog" href="./blog.html">BLOG</a></li>
+            <li><a class="Contact" href="./contact.html">CONTACT</a></li>
+          </ul>
         </nav>
         <h1>Planted <span>invitation</span></h1>
       </div>
-      <div class="imgContainer">
+      <div class="imgContainerHeader">
         <img
           src="./planted-final-assets/header-box.jpg"
           alt="Some plants, view from the top"
@@ -31,7 +37,7 @@
     <main>
       <section>
         <div class="wrapper">
-          <h2>What is planted</h2>
+          <h2>What is planted?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur amet molestias itaque mollitia consectetur libero non,
@@ -69,7 +75,12 @@
         </p>
         <button>Read more</button>
       </article>
-      <figure><img src="./planted-final-assets/right-flowers.jpg" alt="Nice picture of an all green flower"></figure>
+      <figure>
+        <img
+          src="./planted-final-assets/right-flowers.jpg"
+          alt="Nice picture of an all green flower"
+        />
+      </figure>
       <section>
         <div class="wrapper">
           <article>
@@ -127,16 +138,36 @@
             />
           </div>
           <h3>Planed's founder</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet molestias corporis sapiente fugiat repellat! Illo mollitia nobis ratione nesciunt repellat, ducimus, consectetur laborum quod quibusdam voluptatem nisi, tempora adipisci.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet
+            molestias corporis sapiente fugiat repellat! Illo mollitia nobis
+            ratione nesciunt repellat, ducimus, consectetur laborum quod
+            quibusdam voluptatem nisi, tempora adipisci.
+          </p>
           <button>Find out more</button>
         </div>
       </section>
       <section class="Gallery">
         <div class="wrapper">
           <ul>
-            <li><img src="./planted-final-assets/gallery-image-1.jpg" alt="A view of a canopy entry"></li>
-            <li><img src="./planted-final-assets/gallery-image-2.jpg" alt="Multiple flower pot, view from the top"></li>
-            <li><img src="./planted-final-assets/gallery-image-3.jpg" alt="Multiple cactus"></li>
+            <li>
+              <img
+                src="./planted-final-assets/gallery-image-1.jpg"
+                alt="A view of a canopy entry"
+              />
+            </li>
+            <li>
+              <img
+                src="./planted-final-assets/gallery-image-2.jpg"
+                alt="Multiple flower pot, view from the top"
+              />
+            </li>
+            <li>
+              <img
+                src="./planted-final-assets/gallery-image-3.jpg"
+                alt="Multiple cactus"
+              />
+            </li>
           </ul>
         </div>
       </section>
