@@ -1,9 +1,7 @@
 @use "variables" as *;
 
-
 ul {
   list-style: none;
-
 }
 
 a {
@@ -28,13 +26,13 @@ nav ul {
     font-weight: 700;
     font-size: 0.75rem;
   }
-  
 }
 .title {
   font-size: 2rem;
- margin: 0;
+  margin: 0;
 }
-.navContact{
+.navContact,
+.navBlog {
   background-color: $primaryBlack;
-height: 60px;
+  height: 60px;
 }

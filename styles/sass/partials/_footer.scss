@@ -1,17 +1,14 @@
 @use "variables" as *;
 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: $primaryBlack;
-    color: white;
-    height: 5vh;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $primaryBlack;
+  color: white;
+  height: 5vh;
 }
-footer p{
-    margin: 0;
-
+footer p {
+  margin: 0;
 }
-

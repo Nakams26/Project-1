@@ -1,0 +1,129 @@
+@use "variables" as *;
+
+// using  flex to show 2 sections side by side
+.flexSection {
+  display: flex;
+  background-color: $primaryWhite;
+  position: relative;
+  min-height: 380vh;
+}
+
+// Section 1 styling
+.windowsPicture {
+  width: 66%;
+  box-shadow: 28px 13px 0px -13px white;
+}
+
+// using flex to display article on top of each other
+.blogFirstSection {
+  width: 60%;
+  article {
+    width: 60%;
+    padding: 20px 25px 10px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 0px 0px 0px white;
+    h2 {
+      font-size: 1rem;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 25px;
+    }
+  }
+}
+.blogFirstArticle {
+  margin-right: 0;
+}
+
+//-------------------End of section 1 styling------------//
+
+// Section 2 styling
+//using flex to display the 4 elements (image, article comment and forme on top of each other)+ using positioning to position the entire section depending on the main page
+.blogSecondSection {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: -350px;
+  width: 50%;
+  h3 {
+    padding-bottom: 30px;
+  }
+}
+
+.blogSecondArticle {
+  margin-left: -25px;
+
+  h2 {
+    padding-top: 45px;
+  }
+  h3,
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+.plantPicture {
+  box-shadow: -27px 27px 0px -3px $primaryYellow;
+}
+.blogThirdArticle {
+  border-left: 5px solid $primaryYellow;
+  border-bottom: 5px solid $primaryYellow;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.blogDate {
+  color: $primaryGreen;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+// Using flex to display the user picture and his comment side by side
+.comment {
+  display: flex;
+  padding-bottom: 30px;
+  .profile1 {
+    width: 350px;
+  }
+  .profile2 {
+    width: 265px;
+  }
+  article {
+    padding-left: 30px;
+  }
+}
+
+// Contact form styling
+// Using flex to display name and email side by side
+.blogFlexForm {
+  display: flex;
+  justify-content: space-between;
+}
+//Using flex to display every form element on top of each other
+.blogForm {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 48%;
+    border-width: 0 0 1px 0;
+    border-color: $secondaryGreen;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: $primaryFont;
+    background-color: $primaryWhite;
+    line-height: 32px;
+  }
+  textarea {
+    border: 1px solid $secondaryGreen;
+    padding: 30px;
+    background-color: $primaryWhite;
+    font-family: $primaryFont;
+  }
+  button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+//-------------------End of section 2 styling------------//

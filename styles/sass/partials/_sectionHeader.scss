@@ -12,64 +12,61 @@
 }
 // Using flex to display every element on top of each other
 .flexFirstSection {
-    height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 //-----------------End of  section 1 styling-----------------------//
 
 // Section 2 Styling
-.secondSection{
-    position: relative;
-    height: 110vh;
+.secondSection {
+  position: relative;
+  height: 110vh;
 }
 //using flex to display article and figure side by side
 .firstRow {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 //using flex to display article and figure side by side
 .secondRow {
-    display: flex;
-    justify-content: flex-start;
-
+  display: flex;
+  justify-content: flex-start;
 }
 
 //Positioning figure
 .firstRow figure {
-    width: 43%;
-    position: absolute;
-   left: 0;
-   top: -50px;
-   box-shadow: 27px 27px 0px -3px $primaryYellow;
-    
+  width: 43%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  box-shadow: 27px 27px 0px -3px $primaryYellow;
 }
-.secondRow figure{
-    width: 43%;
-    box-shadow: -27px 27px 0px -3px $primaryYellow;
-    position: absolute;
-    right: 0;
-    bottom: -60px;
+.secondRow figure {
+  width: 43%;
+  box-shadow: -27px 27px 0px -3px $primaryYellow;
+  position: absolute;
+  right: 0;
+  bottom: -60px;
 }
 //Positionning article
 .firstRow article {
-    width: 50%;
-    padding-right: 80px;
-    padding-left: 100px;
-    position: absolute;
-    top: 70px;
+  width: 50%;
+  padding-right: 80px;
+  padding-left: 100px;
+  position: absolute;
+  top: 70px;
 }
 
-.secondRow article{
-    width: 50%;
-    text-align: right;
-    padding-right: 80px;
-    padding-left: 100px;
-    position: absolute;
-    bottom: 30px;
+.secondRow article {
+  width: 50%;
+  text-align: right;
+  padding-right: 80px;
+  padding-left: 100px;
+  position: absolute;
+  bottom: 30px;
 }
 
 //-----------------End of  section 2 styling-----------------------//
@@ -77,11 +74,11 @@
 //Section 3 styling
 
 .thirdSection {
-    background-color: $primaryWhite;
-    padding-top: 150px;
+  background-color: $primaryWhite;
+  padding-top: 150px;
 }
 // Using flex to display articles side by side
-.flexThirdSection{
+.flexThirdSection {
   display: flex;
 }
 
@@ -92,7 +89,7 @@
   margin-bottom: 30px;
 }
 // Positioning icons depeding on the article
-.thirdSection span{
+.thirdSection span {
   color: $primaryBlack;
   position: absolute;
   left: 40px;
@@ -103,14 +100,14 @@
 //-----------------End of  section 3 styling-----------------------//
 
 //Section about styling
-.fourthSection{
-  margin:0;
+.fourthSection {
+  margin: 0;
   padding: 0;
 }
 //-----------------End of  section 4 styling-----------------------//
 
 //Section 5 styling
-.about{
+.about {
   background-color: $primaryWhite;
 }
 .flexAbout {
@@ -118,33 +115,31 @@
   justify-content: space-between;
   align-items: center;
 }
-.about figure{
-  
+.about figure {
   box-shadow: 27px 27px 0px -3px $primaryYellow;
 }
 
-.about article{
+.about article {
   width: 65%;
   display: flex;
   flex-direction: column;
 }
 
-.about button{
- width: 200px;
+.about button {
+  width: 200px;
 }
 
 //-----------------End of  section 4 styling-----------------------//
 
 // Gallery styling
 // Using flex to display images side by side
-.flexGallery{
+.flexGallery {
   display: flex;
   justify-content: space-between;
   gap: 40px;
- 
-  li{
-   
-    flex-basis: calc(100%/3);
+
+  li {
+    flex-basis: calc(100% / 3);
   }
 }
 // End of section styling

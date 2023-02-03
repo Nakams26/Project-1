@@ -38,28 +38,30 @@
   bottom: 130px;
 }
 
-.contact {
-  input {
-    width: 49%;
-    border-width: 0 0 1px 0;
-    border-color: $secondaryGreen;
-    padding: 20px;
-    margin-bottom: 30px;
-    font-family: $secondaryFont;
-  }
-  textarea {
-    border: 1px solid $secondaryGreen;
-    padding: 30px;
-  }
-  button {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-}
 .flexSocial {
-    display: flex;
+  display: flex;
 }
 .fa {
-    padding-right: 20px;
-    color: $secondaryGreen;
+  padding-right: 20px;
+  color: $secondaryGreen;
+}
+
+// Contact form styling
+input {
+  width: 49%;
+  border-width: 0 0 1px 0;
+  border-color: $secondaryGreen;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: $secondaryFont;
+  line-height: 32px;
+}
+textarea {
+  border: 1px solid $secondaryGreen;
+  padding: 30px;
+  font-family: $secondaryFont;
+}
+button {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
