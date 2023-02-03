@@ -395,9 +395,9 @@ h2 {
 
 .firstRow article {
   width: 50%;
-  padding: 0 180px 50px 100px;
+  padding-right: 80px;
+  padding-left: 100px;
   position: absolute;
-  top: 100px;
 }
 
 .secondRow article {
