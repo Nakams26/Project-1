@@ -1,6 +1,3 @@
-
-
-
 @use "partials/setup";
 @use "partials/footer";
 @use "partials/nav";
@@ -8,11 +5,17 @@
 @use "partials/variables" as *;
 @use "partials/sectionHeader";
 
+
+// General styling
 p,
 a {
   font-family: $secondaryFont;
+  font-size: 1rem;
 }
-
+p{
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
 h2,
 h3,
 h4 {
@@ -20,7 +23,21 @@ h4 {
   font-weight: 700;
   margin: 0;
 }
-
+h1{
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 8.3rem;
+  line-height: 6rem;
+}
+h2 {
+  font-size: 2.815rem;
+}
+h3 {
+  font-size: 2.15rem;
+}
+h4{
+  font-size: 2.1rem;
+}
 section{
   padding-top: 100px;
   padding-bottom: 100px;
@@ -29,11 +46,15 @@ section{
 button{
   color:$primaryWhite;
   background-color: $secondaryGreen;
+  font-size: 1rem;
   font-family: $primaryFont;
   border: none;
   padding: 10px 25px;
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+}
 figure{
   margin: 0;
 }
