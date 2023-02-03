@@ -2,7 +2,7 @@
 
 // Section contact styling
 
-.contact {
+.contactSection {
   position: relative;
   background-color: $primaryWhite;
 }
@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 // Styling of form
-.contact form {
+.contactForm {
   width: 55%;
   background-color: White;
   padding: 30px;
@@ -47,7 +47,7 @@
 }
 
 // Contact form styling
-input {
+.contactForm input {
   width: 49%;
   border-width: 0 0 1px 0;
   border-color: $secondaryGreen;
@@ -56,12 +56,12 @@ input {
   font-family: $secondaryFont;
   line-height: 32px;
 }
-textarea {
+.contactForm textarea {
   border: 1px solid $secondaryGreen;
   padding: 30px;
   font-family: $secondaryFont;
 }
-button {
+.contactForm button {
   margin-top: 40px;
   margin-bottom: 20px;
 }
