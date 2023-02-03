@@ -1,0 +1,65 @@
+@use "variables" as *;
+
+// Section contact styling
+
+.contact {
+  position: relative;
+  background-color: $primaryWhite;
+}
+
+.contact p {
+  margin: 0;
+  padding: 0;
+}
+
+.email {
+  font-family: $primaryFont;
+  line-height: 60px;
+}
+// Using flex to display infos and contact form side by side
+.flexSection {
+  display: flex;
+}
+// Using flex to display name and adresse form side by side
+.flexForm {
+  display: flex;
+  justify-content: space-between;
+}
+// Styling of form
+.contact form {
+  width: 55%;
+  background-color: White;
+  padding: 30px;
+  box-shadow: -27px 27px 0px -3px $primaryYellow;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 80px;
+  bottom: 130px;
+}
+
+.contact {
+  input {
+    width: 49%;
+    border-width: 0 0 1px 0;
+    border-color: $secondaryGreen;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: $secondaryFont;
+  }
+  textarea {
+    border: 1px solid $secondaryGreen;
+    padding: 30px;
+  }
+  button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+.flexSocial {
+    display: flex;
+}
+.fa {
+    padding-right: 20px;
+    color: $secondaryGreen;
+}

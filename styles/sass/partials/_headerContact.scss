@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+.headerContact {
+  height: 70vh;
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactH1 {
+  margin: 0;
+  color: $primaryYellow;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+.HomeContact {
+  color: $primaryWhite;
+}
+.Contact{
+  color: $primaryYellow;
+}
+

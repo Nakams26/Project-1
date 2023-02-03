@@ -12,50 +12,66 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header>
+    <nav class="navContact">
       <div class="wrapper">
-        <nav>
-          <ul>
-            <li><p>Planted</p></li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Get in <span>touch</span></h1>
+        <ul>
+          <li><p class="title">Planted</p></li>
+          <li><a class="HomeContact" href="./index.html">HOME</a></li>
+          <li><a class="About" href="#About">ABOUT</a></li>
+          <li><a class="Blog" href="./blog.html">BLOG</a></li>
+          <li><a class="Contact" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="headerContact">
+      <div class="wrapper headerContact">
+        <h1 class="contactH1">Get in <span>touch</span></h1>
       </div>
     </header>
     <main>
       <section class="contact">
-        <div class="wrapper">
-          <h4><strong>info@email.com</strong></h4>
-          <ul>
-            <li>
-              <p>123 - 456- 7890</p>
-            </li>
-            <li>
-              <p>123 Queen Street West, Unit 10</p>
-            </li>
-            <li>
-              <p>Toronto, Ontario</p>
-            </li>
-            <li>
-              <p>M5V2D5</p>
-            </li>
-          </ul>
+        <div class="wrapper flexSection">
+          <div class="contactInfo">
+            <ul class="flexSocial">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-whatsapp"></a></li>
+            </ul>
+            <p class="email"><strong>info@email.com</strong></p>
+            <ul>
+              <li>
+                <p>123 - 456- 7890</p>
+              </li>
+              <li>
+                <p>123 Queen Street West, Unit 10</p>
+              </li>
+              <li>
+                <p>Toronto, Ontario</p>
+              </li>
+              <li>
+                <p>M5V2D5</p>
+              </li>
+            </ul>
+          </div>
           <form action="#" method="POST" name="ContactUs">
-            <label class="sr-only" for="Name">Name</label>
-            <input type="text" id="Name" name="Name" placeholder="Name" />
-            <label class="sr-only" for="emailAddress">Email Address</label>
-            <input
-              type="email"
-              id="emailAddress"
-              name="emailAddress"
-              placeholder="Email Address"
-            />
+            <div class="flexForm">
+              <label class="sr-only" for="Name">Name</label>
+              <input type="text" id="Name" name="Name" placeholder="Name" />
+              <label class="sr-only" for="emailAddress">Email Address</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="Email Address"
+              />
+            </div>
             <label class="sr-only" for="feedback"
               >Please provide Feedback</label
             >

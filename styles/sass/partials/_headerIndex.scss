@@ -2,7 +2,6 @@
 
 .hIndex {
   height: 100vh;
-  background-color: blue;
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
   position: relative;
@@ -22,6 +21,7 @@
 
 .hIndex h1 {
   left: 28%;
+  top: 30%;
   position: absolute;
   z-index: 10;
   color: $primaryWhite;
