@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+// Section 1 styling
+
+h2 {
+  font-size: 2.815rem;
+}
+.firstSection {
+  background-color: $primaryWhite;
+  height: 100vh;
+
+  p {
+    text-align: center;
+  }
+}
+
+.flexFirstSection {
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+// Section 2 Styling
+.secondSection{
+    position: relative;
+    height: 110vh;
+}
+.firstRow {
+    display: flex;
+    justify-content: flex-end;
+}
+.secondRow {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.firstRow figure {
+    width: 43%;
+    position: absolute;
+   left: 0;
+   top: -50px;
+   box-shadow: 27px 27px 0px -3px $primaryYellow;
+    
+}
+
+.secondRow figure{
+    width: 43%;
+    box-shadow: -27px 27px 0px -3px $primaryYellow;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+
+.firstRow article {
+    width: 50%;
+    padding: 0 180px 50px 100px;
+    position: absolute;
+    top: 100px;
+}
+
+.secondRow article{
+    width: 50%;
+    text-align: right;
+    padding-right: 80px;
+    padding-left: 100px;
+    position: absolute;
+   bottom: 100px;
+}
+
+
+//Section 3 styling
+
+.thirdSection {
+    background-color: $primaryWhite;
+
+
+}

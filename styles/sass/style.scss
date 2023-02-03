@@ -1,8 +1,12 @@
+
+
+
 @use "partials/setup";
 @use "partials/footer";
 @use "partials/nav";
 @use "partials/headerIndex";
 @use "partials/variables" as *;
+@use "partials/sectionHeader";
 
 p,
 a {
@@ -14,4 +18,22 @@ h3,
 h4 {
   font-family: $primaryFont;
   font-weight: 700;
+  margin: 0;
+}
+
+section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+button{
+  color:$primaryWhite;
+  background-color: $secondaryGreen;
+  font-family: $primaryFont;
+  border: none;
+  padding: 10px 25px;
+}
+
+figure{
+  margin: 0;
 }
