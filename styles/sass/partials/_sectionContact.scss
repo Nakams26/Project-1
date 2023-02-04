@@ -3,8 +3,11 @@
 // Section contact styling
 
 .contactSection {
-  position: relative;
+  // position: relative;
   background-color: $primaryWhite;
+  padding-bottom: 0;
+  padding-top: 0;
+
 }
 
 .contactSection p {
@@ -19,6 +22,8 @@
 // Using flex to display infos and contact form side by side
 .flexSection {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 // Using flex to display name and adresse form side by side
 .flexForm {
@@ -27,15 +32,15 @@
 }
 // Styling of form
 .contactForm {
-  width: 60%;
+   width: 70%;
   background-color: White;
   padding: 30px;
   box-shadow: -27px 27px 0px -3px $primaryYellow;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 70px;
-  bottom: 120px;
+  position: relative;
+  left: 30px;
+  bottom: 200px;
 }
 
 .flexSocial {
@@ -52,7 +57,7 @@
   border-width: 0 0 1px 0;
   border-color: $secondaryGreen;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 50px;
   font-family: $secondaryFont;
   line-height: 32px;
@@ -63,6 +68,6 @@
   font-family: $secondaryFont;
 }
 .contactForm button {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }

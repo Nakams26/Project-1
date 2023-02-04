@@ -1,8 +1,8 @@
 @use "variables" as *;
 
 // using  flex to show 2 sections side by side
-.flexSection {
-  // display: flex;
+.flexBlogSection {
+  display: flex;
   background-color: $primaryWhite;
 }
 
