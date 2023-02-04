@@ -445,6 +445,29 @@ span {
 .about {
   background-color: #f0efed;
 }
+.about p {
+  margin: 0;
+}
+.about figure {
+  width: 23%;
+  -webkit-box-shadow: 27px 27px 0px -3px #f8e71c;
+          box-shadow: 27px 27px 0px -3px #f8e71c;
+  margin-right: 50px;
+}
+.about article {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about button {
+  width: 200px;
+  margin-top: 40px;
+}
 
 .flexAbout {
   display: -webkit-box;
@@ -458,38 +481,21 @@ span {
           align-items: center;
 }
 
-.about figure {
-  -webkit-box-shadow: 27px 27px 0px -3px #f8e71c;
-          box-shadow: 27px 27px 0px -3px #f8e71c;
-}
-
-.about article {
-  width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about button {
-  width: 200px;
-}
-
 .flexGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
+
 .flexGallery li {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%;
+  -ms-flex-preferred-size: 380px;
+      flex-basis: 380px;
 }
 
 .headerContact {
