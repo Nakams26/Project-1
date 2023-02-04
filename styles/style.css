@@ -538,7 +538,7 @@ span {
   background-color: #f0efed;
 }
 
-.contact p {
+.contactSection p {
   margin: 0;
   padding: 0;
 }
@@ -564,7 +564,7 @@ span {
 }
 
 .contactForm {
-  width: 55%;
+  width: 60%;
   background-color: White;
   padding: 30px;
   -webkit-box-shadow: -27px 27px 0px -3px #f8e71c;
@@ -577,8 +577,8 @@ span {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  right: 80px;
-  bottom: 130px;
+  right: 70px;
+  bottom: 120px;
 }
 
 .flexSocial {
@@ -597,7 +597,8 @@ span {
   border-width: 0 0 1px 0;
   border-color: #0f902d;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
   line-height: 32px;
 }
@@ -647,26 +648,23 @@ span {
 }
 
 .flexSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f0efed;
-  position: relative;
-  min-height: 380vh;
 }
 
 .windowsPicture {
-  width: 66%;
+  width: 74%;
   -webkit-box-shadow: 28px 13px 0px -13px white;
           box-shadow: 28px 13px 0px -13px white;
 }
 
 .blogFirstSection {
-  width: 60%;
+  padding-bottom: 0;
 }
 .blogFirstSection article {
-  width: 60%;
+  width: 70%;
   padding: 20px 25px 10px 20px;
+  -webkit-box-shadow: 12px 0px 0px 0px white;
+          box-shadow: 12px 0px 0px 0px white;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,8 +673,6 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 15px 0px 0px 0px white;
-          box-shadow: 15px 0px 0px 0px white;
 }
 .blogFirstSection article h2 {
   font-size: 1rem;
@@ -698,10 +694,9 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: relative;
   right: 0;
   top: -350px;
-  width: 50%;
 }
 .blogSecondSection h3 {
   padding-bottom: 30px;
@@ -711,7 +706,7 @@ span {
   margin-left: -25px;
 }
 .blogSecondArticle h2 {
-  padding-top: 45px;
+  padding-top: 80px;
 }
 .blogSecondArticle h3,
 .blogSecondArticle h4 {
