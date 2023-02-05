@@ -96,21 +96,21 @@
 }
 //-----------------End of  section 3 styling-----------------------//
 
-//Section about styling
+//Section 4 styling
 .fourthSection {
   margin: 0;
   padding: 0;
 }
 //-----------------End of  section 4 styling-----------------------//
 
-//Section 5 styling
+//Section 5 styling: About section
 .about {
   background-color: $primaryWhite;
   p{
     margin: 0;
   }
   figure {
-    width: 23%;
+    width: 300px;
     box-shadow: 27px 27px 0px -3px $primaryYellow;
     margin-right: 50px;
   }
@@ -132,7 +132,7 @@
 }
 
 
-//-----------------End of  section 4 styling-----------------------//
+//-----------------End of  section 5 (about) styling-----------------------//
 
 // Gallery styling
 // Using flex to display images side by side

@@ -3,7 +3,7 @@
 @use "partials/nav";
 @use "partials/headerIndex";
 @use "partials/variables" as *;
-@use "partials/sectionHeader";
+@use "partials/sectionIndex";
 @use "partials/headerContact";
 @use "partials/sectionContact";
 @use "partials/headerBlog";
@@ -30,6 +30,7 @@ h1 {
   font-weight: 400;
   font-size: 8.3rem;
   line-height: 6rem;
+  margin: 0;
 }
 h2 {
   font-size: 2.815rem;

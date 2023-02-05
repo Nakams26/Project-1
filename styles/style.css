@@ -319,14 +319,14 @@ nav ul a {
 }
 
 .hIndex h1 {
-  left: 28%;
-  top: 30%;
+  right: 260px;
+  bottom: 150px;
+  width: 50%;
   position: absolute;
   z-index: 10;
   color: #f0efed;
 }
-
-span {
+.hIndex h1 span {
   display: block;
   color: #f8e71c;
 }
@@ -449,7 +449,7 @@ span {
   margin: 0;
 }
 .about figure {
-  width: 23%;
+  width: 300px;
   -webkit-box-shadow: 27px 27px 0px -3px #f8e71c;
           box-shadow: 27px 27px 0px -3px #f8e71c;
   margin-right: 50px;
@@ -821,6 +821,7 @@ h1 {
   font-weight: 400;
   font-size: 8.3rem;
   line-height: 6rem;
+  margin: 0;
 }
 
 h2 {

@@ -6,7 +6,7 @@
   background-size: cover;
   position: relative;
 }
-
+//Using positioning to place the picture relative to the header
 .imgContainerHeader {
   width: 600px;
   position: absolute;
@@ -18,16 +18,18 @@
 .Home {
   color: $primaryYellow;
 }
-
+//Using positiong to cneter the h1 relative to the header
 .hIndex h1 {
-  left: 28%;
-  top: 30%;
+  right:260px;
+  bottom: 150px;
+  width: 50%;
   position: absolute;
   z-index: 10;
   color: $primaryWhite;
+  span {
+    display: block;
+    color: $primaryYellow;
+  }
 }
 
-span {
-  display: block;
-  color: $primaryYellow;
-}
+
