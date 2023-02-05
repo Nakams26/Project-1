@@ -709,6 +709,7 @@ nav ul a {
   position: relative;
   right: 0;
   top: -350px;
+  padding-bottom: 0;
 }
 .blogSecondSection h3 {
   padding-bottom: 30px;
