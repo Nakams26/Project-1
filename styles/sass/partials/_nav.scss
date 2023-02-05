@@ -27,6 +27,10 @@ nav ul {
     font-size: 0.75rem;
   }
 }
+
+nav ul a:hover, nav ul a:focus{
+  color: $primaryYellow;
+}
 .title {
   font-size: 2rem;
   margin: 0;

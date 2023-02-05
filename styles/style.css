@@ -289,6 +289,10 @@ nav ul a {
   font-size: 0.75rem;
 }
 
+nav ul a:hover, nav ul a:focus {
+  color: #f8e71c;
+}
+
 .title {
   font-size: 2rem;
   margin: 0;
