@@ -1,14 +1,15 @@
 @use "variables" as *;
-
-nav ul {
+nav{
   display: flex;
   align-items: center;
- 
+}
+nav ul {
+  display: flex;
   p {
     font-family: $primaryFont;
   }
   li {
-    padding: 20px 60px 0px 0px;
+     padding: 20px;
     color: $primaryWhite;
   }
   a {
@@ -29,5 +30,4 @@ nav ul a:hover, nav ul a:focus{
 .navContact,
 .navBlog {
   background-color: $primaryBlack;
-  height: 60px;
 }

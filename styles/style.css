@@ -304,7 +304,7 @@ button {
   padding: 10px 25px;
 }
 
-nav ul {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,11 +312,17 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 nav ul p {
   font-family: "Josefin Sans", sans-serif;
 }
 nav ul li {
-  padding: 20px 60px 0px 0px;
+  padding: 20px;
   color: #f0efed;
 }
 nav ul a {
@@ -338,13 +344,13 @@ nav ul a:hover, nav ul a:focus {
 .navContact,
 .navBlog {
   background-color: #2c2c2c;
-  height: 60px;
 }
 
 .hIndex {
-  height: 100vh;
+  height: 90vh;
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -359,11 +365,20 @@ nav ul a:hover, nav ul a:focus {
   color: #f8e71c;
 }
 
+.flexH1Index {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hIndex h1 {
-  right: 260px;
-  bottom: 150px;
-  width: 50%;
-  position: absolute;
   z-index: 10;
   color: #f0efed;
 }
@@ -376,6 +391,7 @@ nav ul a:hover, nav ul a:focus {
   height: 60vh;
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -749,7 +765,7 @@ nav ul a:hover, nav ul a:focus {
           flex-direction: column;
   position: relative;
   right: 0;
-  top: -350px;
+  top: -250px;
   padding-bottom: 0;
 }
 .blogSecondSection h3 {
