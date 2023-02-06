@@ -1,68 +1,12 @@
-@use "partials/setup";
-@use "partials/footer";
-@use "partials/nav";
-@use "partials/headerIndex";
-@use "partials/variables" as *;
-@use "partials/sectionIndex";
-@use "partials/headerContact";
-@use "partials/sectionContact";
-@use "partials/headerBlog";
-@use "partials/sectionBlog";
+@use "./partials/variables" as *;
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/nav";
+@use "./partials/headerIndex";
+@use "./partials/headerContact";
+@use "./partials/headerBlog";
+@use "./partials/sectionIndex";
+@use "./partials/sectionContact";
+@use "./partials/sectionBlog";
+@use "./partials/footer";
 
-// General styling
-p,
-a {
-  font-family: $secondaryFont;
-  font-size: 1rem;
-}
-p {
-  line-height: 1.6rem;
-}
-h2,
-h3,
-h4 {
-  font-family: $primaryFont;
-  font-weight: 700;
-  margin: 0;
-}
-h1 {
-  font-family: $primaryFont;
-  font-weight: 400;
-  font-size: 8.3rem;
-  line-height: 6rem;
-  margin: 0;
-}
-h2 {
-  font-size: 2.815rem;
-}
-h3 {
-  font-size: 2.15rem;
-}
-h4 {
-  font-size: 2.1rem;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-figure {
-  margin: 0;
-}
-// general section styling
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-//Button styling (common to every pages)
-
-button {
-  color: $primaryWhite;
-  background-color: $secondaryGreen;
-  font-size: 1rem;
-  font-family: $primaryFont;
-  border: none;
-  padding: 10px 25px;
-}
