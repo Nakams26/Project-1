@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .headerContact {
-  height: 60vh;
+  height: 75vh;
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-size: cover;
   background-position: center;
@@ -9,7 +9,7 @@
 }
 // Adding a parent to flex h1
 .contactH1Parent {
-  height: 100%;
+  height: 80%;
 }
 
 // Using flex to display h1 at the bottom of his parent
