@@ -20,16 +20,13 @@
   color: $primaryYellow;
 }
 // Using flex to center the h1
-.flexH1Index{
-  height: 90vh;
+.hIndex {
+  .wrapper{
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
 }
-
-.hIndex h1 {
-  // width: 50%;
+h1 {
   z-index: 10;
   color: $primaryWhite;
   span {
@@ -37,5 +34,14 @@
     color: $primaryYellow;
   }
 }
+.flexH1Index{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+}
+
+
 
 
