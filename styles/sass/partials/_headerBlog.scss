@@ -6,22 +6,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-// Adding a parent to flex h1
-.h1Parent {
-  height: 100%;
-}
-// Using flex to display h1 at the bottom of his parent
-.blogH1 {
-  margin: 0;
-  color: $primaryYellow;
-  height: 80%;
+  // Using flex to display nav and h1 on top of each other and with space betwenn
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  font-size: 4rem;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  .blogH1 {
+    color: $primaryYellow;
+    font-size: 4rem;
+  }
+  
+  .blogBlog {
+    color: $primaryYellow;
+  }
 }
 
-.blogBlog {
-  color: $primaryYellow;
-}
+

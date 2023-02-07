@@ -1,0 +1,141 @@
+@use "./variables" as *;
+
+// Media Queries
+
+//Index media Queries
+
+
+
+@media (max-width: 700px){
+// Index Header  
+.hIndex{
+    ul{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+}
+.imgContainerHeader {
+    display: none;
+}
+// End of header index
+
+//Index second section
+.secondSection{
+    padding: 50px;
+    figure{
+        padding-top: 0px;
+        width: 100%;
+        position:static;
+        box-shadow: none;
+        box-shadow: 0px 0px 0px 16px $primaryYellow;
+        margin-top: 30px;
+    }
+    img{
+        padding: 0;
+    }
+    article{
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+ .firstRow {
+    display: flex;
+    flex-direction: column-reverse;
+}
+// End of second section index
+
+//Third section index
+.thirdSection  {
+    .flexThirdSection{
+    flex-direction: column;
+   align-items: center;
+    }
+    article{
+    width: 100%;
+}
+}
+// End of third section index
+
+//About section
+.flexAbout{
+    display: flex;
+    flex-direction: column;
+
+    figure{
+        width: 80%;
+        box-shadow: 0px 0px 0px 16px $primaryYellow;
+        margin-bottom: 40px;
+        text-align: center;
+        margin-right: 0;
+    }
+    article {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+}
+}
+// End of about section
+//End of Index Media Queries
+}
+//-----------------------------------//
+//Start of blog media query
+
+@media (max-width: 800px){
+// Blog Header 
+    .blogH1{
+        text-align: right;
+    }
+    .headerBlog{
+        nav{
+            background-color: transparent;
+        }
+        ul{
+            flex-direction: column;
+        }
+    }
+    // End of blog header
+
+
+// Blog section
+    .flexBlogSection{
+        flex-direction: column;
+    }
+ .windowsPicture{
+    width: 100%;
+    position: static;
+    box-shadow: none;
+ }
+.blogFirstSection{
+    padding-bottom: 50px;
+     
+    article{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        box-shadow: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+    .blogSecondSection{
+      
+        .plantPicture{
+            box-shadow: 0px 0px 0px 16px $primaryYellow;
+         margin-top: 200px;
+           width: 100%;
+      }
+      article{
+        border: none;
+      }
+    }
+
+    // end of blog media Query
+
+// -----------------------------------------------//
+}

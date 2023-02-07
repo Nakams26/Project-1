@@ -6,27 +6,27 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-// Adding a parent to flex h1
-.contactH1Parent {
-  height: 80%;
-}
-
-// Using flex to display h1 at the bottom of his parent
-.contactH1 {
-  margin: 0;
-  color: $primaryYellow;
-  height: 100%;
+  padding-bottom: 30px;
+    // Using flex to display nav and h1 on top of each other and with space betwenn
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  font-size: 4rem;
-  line-height: 4.6rem;
-}
+  justify-content: space-between;
 
-.HomeContact {
-  color: $primaryWhite;
+  // Using flex to display h1 at the bottom of his parent
+  .contactH1 {
+    color: $primaryYellow;
+    font-size: 4rem;
+    line-height: 4.6rem;
+    span {
+      display: block;
+    }
+  }
+
+  .HomeContact {
+    color: $primaryWhite;
+  }
+  .Contact {
+    color: $primaryYellow;
+  }
 }
-.Contact {
-  color: $primaryYellow;
-}
+// Adding a parent to flex h1

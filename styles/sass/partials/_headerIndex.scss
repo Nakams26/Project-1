@@ -1,5 +1,7 @@
 @use "variables" as *;
 
+
+// Section styling
 .hIndex {
   height: 90vh;
   background-image: url(../planted-final-assets/home-image-1.jpg);
@@ -7,41 +9,40 @@
   background-position: center;
   position: relative;
 }
+
+.hIndex {
+// Using flex to display nav and h1 on top of each other and have the correct amount of space between them
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+  // Using flex on the h1 parent to center it verticlally and horizontally
+  .flexH1Index {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  h1 {
+    z-index: 10;
+    color: $primaryWhite;
+    span {
+      display: block;
+      color: $primaryYellow;
+    }
+  }
+}
+
 //Using positioning to place the picture relative to the header
 .imgContainerHeader {
-  width: 600px;
+  width: 40%;
   position: absolute;
   right: 0;
   top: 200px;
 }
+
 // Changing color of home menu
 
 .Home {
   color: $primaryYellow;
 }
-// Using flex to center the h1
-.hIndex {
-  .wrapper{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-h1 {
-  z-index: 10;
-  color: $primaryWhite;
-  span {
-    display: block;
-    color: $primaryYellow;
-  }
-}
-.flexH1Index{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
-}
-
-
-
-
