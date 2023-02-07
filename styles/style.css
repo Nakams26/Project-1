@@ -483,7 +483,7 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 .firstRow figure {
@@ -501,17 +501,17 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: -27px 27px 0px -3px #f8e71c;
   position: absolute;
   right: 0;
-  bottom: -40px;
+  bottom: -80px;
 }
 
 .firstRow article {
   width: 42%;
+  margin-top: -20px;
 }
 
 .secondRow article {
   width: 43%;
   text-align: right;
-  margin-top: 50px;
 }
 
 .thirdSection {

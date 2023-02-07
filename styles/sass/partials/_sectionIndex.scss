@@ -33,7 +33,7 @@
 .firstRow {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 
@@ -50,17 +50,18 @@
   box-shadow: -27px 27px 0px -3px $primaryYellow;
   position: absolute;
   right: 0;
-  bottom: -40px;
+  bottom: -80px;
 }
 //Positionning article
 .firstRow article {
   width: 42%;
+  margin-top: -20px;
 }
 
 .secondRow article {
   width: 43%;
   text-align: right;
-  margin-top: 50px;
+ 
 }
 
 //-----------------End of  section 2 styling-----------------------//
