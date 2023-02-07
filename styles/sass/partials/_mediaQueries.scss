@@ -9,7 +9,7 @@
 @media (max-width: 700px){
 // Index Header  
 .hIndex{
-    padding: 60px;
+   
     height: 65vh;
     ul{
         flex-direction: column;
@@ -31,13 +31,12 @@
 // End of header index
 // First section 
 .firstSection {
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 //Index second section
 .secondSection{
-    padding: 60px;
   
-
     figure{
         padding-top: 0px;
         width: 100%;
@@ -54,7 +53,9 @@
         text-align: center;
         margin-top: 0;
     }
+   
 }
+
  .firstRow {
     display: flex;
     flex-direction: column-reverse;
@@ -63,7 +64,7 @@
 
 //Third section index
 .thirdSection  {
-    padding: 60px;
+   
     .flexThirdSection{
     flex-direction: column;
    align-items: center;
@@ -78,8 +79,7 @@
 .flexAbout{
     display: flex;
     flex-direction: column;
-    padding: 60px;
-
+   
     figure{
         width: 80%;
         box-shadow: 0px 0px 0px 16px $primaryYellow;
