@@ -5,16 +5,14 @@
 .contactSection {
   // position: relative;
   background-color: $primaryWhite;
-  padding-bottom: 0;
-  padding-top: 0;
-
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
-
-.contactSection p {
-  margin: 0;
-  padding: 0;
+.contactInfos {
+  padding-bottom: 80px;
 }
-
 .email {
   font-family: $primaryFont;
   line-height: 60px;
@@ -23,8 +21,10 @@
 .flexSection {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+   align-items: center;
 }
+
+
 // Using flex to display name and adresse form side by side
 .flexForm {
   display: flex;
@@ -32,15 +32,15 @@
 }
 // Styling of form
 .contactForm {
-  width: 70%;
+   width: 70%;
   background-color: White;
   padding: 30px;
-  box-shadow: -27px 27px 0px -3px $primaryYellow;
+  box-shadow: -22px 22px 0px -3px $primaryYellow;
   display: flex;
   flex-direction: column;
   position: relative;
   left: 30px;
-  bottom: 200px;
+  bottom: 250px;
 }
 
 .flexSocial {
@@ -70,4 +70,5 @@
 .contactForm button {
   margin-top: 50px;
   margin-bottom: 20px;
+  
 }

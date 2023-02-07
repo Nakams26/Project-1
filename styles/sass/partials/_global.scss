@@ -59,11 +59,12 @@ figure {
 
 //Button styling (common to every pages)
 
-button {
+.button {
   color: $primaryWhite;
   background-color: $secondaryGreen;
   font-size: 1rem;
   font-family: $primaryFont;
   border: none;
   padding: 10px 25px;
+  text-align: center;
 }

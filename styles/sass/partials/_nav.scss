@@ -7,7 +7,7 @@ nav ul {
     font-family: $primaryFont;
   }
   li {
-     padding: 20px;
+     padding: 20px 50px 20px 0;
     color: $primaryWhite;
   }
   a {
@@ -16,7 +16,9 @@ nav ul {
     font-weight: 700;
     font-size: 0.75rem;
   }
+  
 }
+
 
 nav ul a:hover, nav ul a:focus{
   color: $primaryYellow;

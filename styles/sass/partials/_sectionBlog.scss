@@ -1,29 +1,31 @@
 @use "variables" as *;
 
-// using  flex to show 2 sections side by side
-.flexBlogSection {
-  display: flex;
+// First part of the section (on the left)
+.BlogSection {
   background-color: $primaryWhite;
 }
 
+// using  flex to show 2 part of the section side by side
+.flexBlogSection {
+  display: flex;
+  justify-content: space-between;
+}
 
-
-// using flex to display article on top of each other
+// using flex to display image and article on top of each other. Styling figure and article
 .blogFirstSection {
-  padding-top:50px;
+  width: 30%;
+  margin-top:100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-
+  align-items: flex-end;
+ 
   article {
-    width: 70%;
-    padding: 20px 25px 10px 20px;
-    box-shadow: 12px 0px 0px 0px white;
+    padding: 20px 20px 10px 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
-   
+    justify-content: flex-end;
+    box-shadow: 22px 0px 0px 0px white;
     h2 {
       font-size: 1rem;
     }
@@ -32,26 +34,26 @@
       padding-left: 25px;
     }
   }
-}
-// Section 1 styling
-.windowsPicture {
-  position: relative;
-  left: -78px;
-  box-shadow: 28px 13px 0px -13px white;
+  figure {
+    width: 130%;
+    box-shadow: 43px 21px 0px -21px white;
+    }
 }
 
-//-------------------End of section 1 styling------------//
 
-// Section 2 styling
-//using flex to display the 4 elements (image, article comment and forme on top of each other)+ using positioning to position the entire section
+// Second part of the section (on the right)
+
+//using flex to display the 4 elements (image, article, comment and form on top of each other)+ using positioning to position the entire section
 .blogSecondSection {
-  
+  width: 60%;
   display: flex;
   flex-direction: column;
-  margin-top: -150px;
+  position: relative;
+  bottom: 200px;
+
     .plantPicture{
-      width: 109%;
-      box-shadow: -27px 27px 0px -3px $primaryYellow;
+     width: 120%;
+      box-shadow: -22px 22px 0px -3px $primaryYellow;
     }
     h2{
       padding-top: 100px;
@@ -60,22 +62,23 @@
     padding-bottom: 30px;
     font-size: 1rem;
   }
- 
 }
-
+// Adding yellow border to my article
 .blogThirdArticle {
   border-left: 5px solid $primaryYellow;
   border-bottom: 5px solid $primaryYellow;
   padding-left: 40px;
   margin-bottom: 40px;
-  margin-left: -25px;
+  margin-left: -19px;
+
+  .blogDate {
+    color: $primaryGreen;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
-.blogDate {
-  color: $primaryGreen;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
+
 // Using flex to display the user picture and his comment side by side
 .comment {
   display: flex;
