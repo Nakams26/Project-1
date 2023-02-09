@@ -765,6 +765,10 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: 43px 21px 0px -21px white;
 }
 
+.blogFirstArticle p a {
+  color: #074115;
+}
+
 .blogSecondSection {
   width: 60%;
   display: -webkit-box;
