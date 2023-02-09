@@ -22,7 +22,6 @@
     }
     .flexH1Index{
         justify-content: flex-end;
-   
     }
 }
 .imgContainerHeader {
@@ -51,7 +50,7 @@
     article{
         width: 100%;
         text-align: center;
-        margin-top: 0;
+      margin-bottom: 30px;
     }
    
 }
@@ -59,7 +58,14 @@
  .firstRow {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 50px;
 }
+.secondRow {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
 // End of second section index
 
 //Third section index
@@ -171,15 +177,15 @@
 //Contact section
 .flexSection{
     flex-direction: column-reverse;
-    width: 100%;
+     width: 100%;
 }
 
 .contactForm{
     position: static;
-    width: 85%;
     box-shadow: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 0px 16px $primaryYellow;
     input{
         width: 100%;
     }

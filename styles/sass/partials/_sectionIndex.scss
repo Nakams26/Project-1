@@ -25,37 +25,47 @@
 
 // Section 2 Styling
 .secondSection {
- position: relative;
- padding-top:100px;
- padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
 }
 //using flex to display article and figure side by side
 .firstRow {
   display: flex;
-  justify-content: flex-end;
-  padding-bottom: 90px;
-}
+  justify-content: space-between;
 
+ margin-bottom: -50px;
+
+}
+.secondRow{
+  display: flex;
+  justify-content: space-between;
+align-items: flex-end;
+margin-top: -100px;
+
+}
 
 //Positioning figure
 .firstRow figure {
-  width: 43%;
-  position: absolute;
-  left: 0;
-  top: -45px;
-  box-shadow: 27px 27px 0px -3px $primaryYellow;
+   width: 52%;
+  position: relative;
+  top: -125px;
+  left: -110px;
+  img{
+    box-shadow: 22px 22px 0px -3px $primaryYellow;
+  }
 }
 .secondRow figure {
-  width: 43%;
-  box-shadow: -27px 27px 0px -3px $primaryYellow;
-  position: absolute;
-  right: 0;
-  bottom: -80px;
+  width: 52%;
+  box-shadow: -22px 22px 0px -3px $primaryYellow;
+  position: relative;
+  bottom: -125px;
+  right: -110px;
+ 
 }
 //Positionning article
 .firstRow article {
-  width: 42%;
-  margin-top: -20px;
+   width: 40%;
 }
 
 .secondRow article {

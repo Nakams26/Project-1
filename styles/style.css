@@ -471,42 +471,55 @@ nav ul a:hover, nav ul a:focus {
 }
 
 .secondSection {
-  position: relative;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .firstRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-bottom: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -100px;
 }
 
 .firstRow figure {
-  width: 43%;
-  position: absolute;
-  left: 0;
-  top: -45px;
-  -webkit-box-shadow: 27px 27px 0px -3px #f8e71c;
-          box-shadow: 27px 27px 0px -3px #f8e71c;
+  width: 52%;
+  position: relative;
+  top: -125px;
+  left: -110px;
+}
+.firstRow figure img {
+  -webkit-box-shadow: 22px 22px 0px -3px #f8e71c;
+          box-shadow: 22px 22px 0px -3px #f8e71c;
 }
 
 .secondRow figure {
-  width: 43%;
-  -webkit-box-shadow: -27px 27px 0px -3px #f8e71c;
-          box-shadow: -27px 27px 0px -3px #f8e71c;
-  position: absolute;
-  right: 0;
-  bottom: -80px;
+  width: 52%;
+  -webkit-box-shadow: -22px 22px 0px -3px #f8e71c;
+          box-shadow: -22px 22px 0px -3px #f8e71c;
+  position: relative;
+  bottom: -125px;
+  right: -110px;
 }
 
 .firstRow article {
-  width: 42%;
-  margin-top: -20px;
+  width: 40%;
 }
 
 .secondRow article {
@@ -913,7 +926,7 @@ footer p {
   .secondSection article {
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin-bottom: 30px;
   }
   .firstRow {
     display: -webkit-box;
@@ -923,6 +936,17 @@ footer p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  .secondRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
   }
   .thirdSection .flexThirdSection {
     -webkit-box-orient: vertical;
@@ -1029,11 +1053,12 @@ footer p {
   }
   .contactForm {
     position: static;
-    width: 85%;
     -webkit-box-shadow: none;
             box-shadow: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 0px 0px 16px #f8e71c;
+            box-shadow: 0px 0px 0px 16px #f8e71c;
   }
   .contactForm input {
     width: 100%;
