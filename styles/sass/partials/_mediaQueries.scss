@@ -171,7 +171,12 @@
   }
   // End of contact header
 
-  //Contact section
+}
+
+
+// Max width is a big bigger for the contact section. if I use the same as other section, the contact box was ovveriding the title of the page that's why I choose 820px
+@media (max-width: 820px){
+    //Contact section
   .flexSection {
     flex-direction: column-reverse;
     width: 100%;
