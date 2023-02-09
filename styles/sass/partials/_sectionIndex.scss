@@ -57,7 +57,9 @@ margin-top: -100px;
 }
 .secondRow figure {
   width: 52%;
+  img{
   box-shadow: -22px 22px 0px -3px $primaryYellow;
+}
   position: relative;
   bottom: -125px;
   right: -110px;

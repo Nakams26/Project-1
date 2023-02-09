@@ -4,203 +4,198 @@
 
 //Index media Queries
 
-
-
-@media (max-width: 700px){
-// Index Header  
-.hIndex{
-   
+@media (max-width: 700px) {
+  // Index Header
+  .hIndex {
     height: 65vh;
-    ul{
-        flex-direction: column;
+    ul {
+      flex-direction: column;
     }
-    h1{
-        font-size: 4rem;
-        line-height: 3rem;
-        text-align: right;
-        padding-bottom: 20px;
+    h1 {
+      font-size: 4rem;
+      line-height: 3rem;
+      text-align: right;
+      padding-bottom: 20px;
     }
-    .flexH1Index{
-        justify-content: flex-end;
+    .flexH1Index {
+      justify-content: flex-end;
     }
-}
-.imgContainerHeader {
+  }
+  .imgContainerHeader {
     display: none;
-}
-// End of header index
-// First section 
-.firstSection {
+  }
+  // End of header index
+  // First section
+  .firstSection {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-//Index second section
-.secondSection{
-  
-    figure{
-        padding-top: 0px;
-        width: 100%;
-        position:static;
-        box-shadow: none;
-        box-shadow: 0px 0px 0px 16px $primaryYellow;
-        margin-top: 30px;
-    }
-    img{
-        padding: 0;
-    }
-    article{
-        width: 100%;
-        text-align: center;
+  }
+  //Index second section
+  .secondSection {
+    article {
+      width: 100%;
+      text-align: center;
       margin-bottom: 30px;
     }
-   
-}
+  }
 
- .firstRow {
+  .firstRow {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 50px;
-}
-.secondRow {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-}
+    figure {
+      width: 100%;
+      position: static;
+      margin-bottom: 100px;
+      margin-top: 30px;
 
-// End of second section index
-
-//Third section index
-.thirdSection  {
-   
-    .flexThirdSection{
-    flex-direction: column;
-   align-items: center;
-    }
-    article{
-    width: 100%;
-}
-}
-// End of third section index
-
-//About section
-.flexAbout{
-    display: flex;
-    flex-direction: column;
-   
-    figure{
-        width: 80%;
+      img {
         box-shadow: 0px 0px 0px 16px $primaryYellow;
-        margin-bottom: 40px;
-        text-align: center;
-        margin-right: 0;
+      }
+    }
+  }
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+    figure {
+      width: 100%;
+      position: static;
+      margin-top: 30px;
+      img {
+        box-shadow: 0px 0px 0px 16px $primaryYellow;
+      }
+    }
+  }
+
+  // End of second section index
+
+  //Third section index
+  .thirdSection {
+    .flexThirdSection {
+      flex-direction: column;
+      align-items: center;
     }
     article {
-        text-align: center;
-        align-items: center;
-        width: 100%;
-}
-}
-// End of about section
-//End of Index Media Queries
-
-//-----------------------------------//
-//Start of blog media query
-
-// Blog Header 
-    .blogH1{
-        text-align: right;
+      width: 100%;
     }
-    .headerBlog{
-        nav{
-            background-color: transparent;
-        }
-        ul{
-            flex-direction: column;
-        }
+  }
+  // End of third section index
+
+  //About section
+  .flexAbout {
+    display: flex;
+    flex-direction: column;
+
+    figure {
+      width: 80%;
+      box-shadow: 0px 0px 0px 16px $primaryYellow;
+      margin-bottom: 40px;
+      text-align: center;
+      margin-right: 0;
     }
-    // End of blog header
-
-
-// Blog section
-// First part (initially on the left)
-    .flexBlogSection{
-        flex-direction: column;
+    article {
+      text-align: center;
+      align-items: center;
+      width: 100%;
     }
-    .blogFirstSection{
-        padding-bottom: 50px;
-        width: 100%;
+  }
+  // End of about section
+  //End of Index Media Queries
 
-        figure{
-            width: 100%;
-            box-shadow: 0px 0px 0px 16px white;
-         }
-            
-    article{
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        box-shadow: 0px 0px 0px 16px white;
-    }
-   
-    }
+  //-----------------------------------//
+  //Start of blog media query
 
-    .blogSecondSection{
-        width: 100%;
-      
-        .plantPicture{
-            box-shadow: 0px 0px 0px 16px $primaryYellow;
-         margin-top: 200px;
-           width: 100%;
-      }
-      article{
-        border: none;
-      }
-    }
-    // end of blog media Query
-// -----------------------------------------------//
-
-
-// Start of contact page media Query
-// Contact Header 
-.contactH1{
+  // Blog Header
+  .blogH1 {
     text-align: right;
-}
-.headerContact{
-    nav{
-        background-color: transparent;
+  }
+  .headerBlog {
+    nav {
+      background-color: transparent;
     }
-    ul{
-        flex-direction: column;
+    ul {
+      flex-direction: column;
     }
-}
-// End of contact header
+  }
+  // End of blog header
 
-//Contact section
-.flexSection{
+  // Blog section
+  // First part (initially on the left)
+  .flexBlogSection {
+    flex-direction: column;
+  }
+  .blogFirstSection {
+    padding-bottom: 50px;
+    width: 100%;
+
+    figure {
+      width: 100%;
+      box-shadow: 0px 0px 0px 16px white;
+    }
+
+    article {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      box-shadow: 0px 0px 0px 16px white;
+    }
+  }
+
+  .blogSecondSection {
+    width: 100%;
+
+    .plantPicture {
+      box-shadow: 0px 0px 0px 16px $primaryYellow;
+      margin-top: 200px;
+      width: 100%;
+    }
+    article {
+      border: none;
+    }
+  }
+  // end of blog media Query
+  // -----------------------------------------------//
+
+  // Start of contact page media Query
+  // Contact Header
+  .contactH1 {
+    text-align: right;
+  }
+  .headerContact {
+    nav {
+      background-color: transparent;
+    }
+    ul {
+      flex-direction: column;
+    }
+  }
+  // End of contact header
+
+  //Contact section
+  .flexSection {
     flex-direction: column-reverse;
-     width: 100%;
-}
+    width: 100%;
+  }
 
-.contactForm{
+  .contactForm {
     position: static;
     box-shadow: none;
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 0px 16px $primaryYellow;
-    input{
-        width: 100%;
+    input {
+      width: 100%;
     }
-    .flexForm{
-        flex-direction: column;
+    .flexForm {
+      flex-direction: column;
     }
-    
-}
-.flexContact{
+  }
+  .flexContact {
     display: flex;
     align-items: center;
-}
-.flexAdress {
+  }
+  .flexAdress {
     text-align: center;
     margin-bottom: 20px;
+  }
 }
-}
-
