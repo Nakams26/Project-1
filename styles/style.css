@@ -334,15 +334,24 @@ nav ul a:hover, nav ul a:focus {
   background-color: #2c2c2c;
 }
 
+.blogBlog {
+  color: #f8e71c;
+}
+
+.Home {
+  color: #f8e71c;
+}
+
+.Contact {
+  color: #f8e71c;
+}
+
 .hIndex {
   height: 90vh;
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-.hIndex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +362,8 @@ nav ul a:hover, nav ul a:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.hIndex .flexH1Index {
+
+.flexH1Index {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,11 +375,12 @@ nav ul a:hover, nav ul a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-.hIndex h1 {
+
+h1 {
   z-index: 10;
   color: #f0efed;
 }
-.hIndex h1 span {
+h1 span {
   display: block;
   color: #f8e71c;
 }
@@ -379,10 +390,6 @@ nav ul a:hover, nav ul a:focus {
   position: absolute;
   right: 0;
   top: 200px;
-}
-
-.Home {
-  color: #f8e71c;
 }
 
 .headerContact {
@@ -411,9 +418,6 @@ nav ul a:hover, nav ul a:focus {
 .headerContact .contactH1 span {
   display: block;
 }
-.headerContact .Contact {
-  color: #f8e71c;
-}
 
 .headerBlog {
   height: 75vh;
@@ -436,9 +440,6 @@ nav ul a:hover, nav ul a:focus {
 .headerBlog .blogH1 {
   color: #f8e71c;
   font-size: 4rem;
-}
-.headerBlog .blogBlog {
-  color: #f8e71c;
 }
 
 .firstSection {
@@ -484,6 +485,19 @@ nav ul a:hover, nav ul a:focus {
           justify-content: space-between;
   margin-bottom: -50px;
 }
+.firstRow figure {
+  width: 52%;
+  position: relative;
+  top: -125px;
+  left: -110px;
+}
+.firstRow figure img {
+  -webkit-box-shadow: 22px 22px 0px -3px #f8e71c;
+          box-shadow: 22px 22px 0px -3px #f8e71c;
+}
+.firstRow article {
+  width: 40%;
+}
 
 .secondRow {
   display: -webkit-box;
@@ -497,18 +511,6 @@ nav ul a:hover, nav ul a:focus {
           align-items: flex-end;
   margin-top: -100px;
 }
-
-.firstRow figure {
-  width: 52%;
-  position: relative;
-  top: -125px;
-  left: -110px;
-}
-.firstRow figure img {
-  -webkit-box-shadow: 22px 22px 0px -3px #f8e71c;
-          box-shadow: 22px 22px 0px -3px #f8e71c;
-}
-
 .secondRow figure {
   width: 52%;
   position: relative;
@@ -519,11 +521,6 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-shadow: -22px 22px 0px -3px #f8e71c;
           box-shadow: -22px 22px 0px -3px #f8e71c;
 }
-
-.firstRow article {
-  width: 40%;
-}
-
 .secondRow article {
   width: 43%;
   text-align: right;
@@ -561,13 +558,10 @@ nav ul a:hover, nav ul a:focus {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.about p {
-  margin: 0;
-}
 .about figure {
   width: 300px;
-  -webkit-box-shadow: 27px 27px 0px -3px #f8e71c;
-          box-shadow: 27px 27px 0px -3px #f8e71c;
+  -webkit-box-shadow: 22px 22px 0px -3px #f8e71c;
+          box-shadow: 22px 22px 0px -3px #f8e71c;
   margin-right: 50px;
 }
 .about article {
@@ -625,19 +619,6 @@ nav ul a:hover, nav ul a:focus {
 .contactSection {
   background-color: #f0efed;
 }
-.contactSection p {
-  margin: 0;
-  padding: 0;
-}
-
-.contactInfos {
-  padding-bottom: 80px;
-}
-
-.email {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 60px;
-}
 
 .flexSection {
   display: -webkit-box;
@@ -651,13 +632,28 @@ nav ul a:hover, nav ul a:focus {
           align-items: center;
 }
 
-.flexForm {
+.contactInfos {
+  padding-bottom: 80px;
+}
+.contactInfos p {
+  margin: 0;
+  padding: 0;
+}
+
+.flexSocial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.fa {
+  padding-right: 20px;
+  color: #0f902d;
+}
+
+.email {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 60px;
 }
 
 .contactForm {
@@ -678,15 +674,13 @@ nav ul a:hover, nav ul a:focus {
   bottom: 250px;
 }
 
-.flexSocial {
+.flexForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.fa {
-  padding-right: 20px;
-  color: #0f902d;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contactForm input {
@@ -699,13 +693,11 @@ nav ul a:hover, nav ul a:focus {
   font-family: "Roboto", sans-serif;
   line-height: 32px;
 }
-
 .contactForm textarea {
   border: 1px solid #0f902d;
   padding: 30px;
   font-family: "Roboto", sans-serif;
 }
-
 .contactForm button {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -783,27 +775,28 @@ nav ul a:hover, nav ul a:focus {
   position: relative;
   bottom: 200px;
 }
-.blogSecondSection .plantPicture {
+
+.plantPicture {
   width: 120%;
   -webkit-box-shadow: -22px 22px 0px -3px #f8e71c;
           box-shadow: -22px 22px 0px -3px #f8e71c;
 }
-.blogSecondSection h2 {
-  padding-top: 100px;
-}
-.blogSecondSection h3 {
-  padding-bottom: 30px;
-  font-size: 1rem;
-}
 
-.blogThirdArticle {
+.blogSecondArticle {
   border-left: 5px solid #f8e71c;
   border-bottom: 5px solid #f8e71c;
   padding-left: 40px;
   margin-bottom: 40px;
   margin-left: -19px;
 }
-.blogThirdArticle .blogDate {
+.blogSecondArticle h2 {
+  padding-top: 100px;
+}
+.blogSecondArticle h3 {
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+.blogSecondArticle .blogDate {
   color: #074115;
   margin-top: 0;
   margin-bottom: 50px;
@@ -868,27 +861,16 @@ nav ul a:hover, nav ul a:focus {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   background-color: #2c2c2c;
   color: white;
   height: 5vh;
 }
-
 footer p {
   margin: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .hIndex {
     height: 65vh;
   }
@@ -1043,6 +1025,8 @@ footer p {
   .blogSecondSection article {
     border: none;
   }
+}
+@media (max-width: 820px) {
   .contactH1 {
     text-align: right;
   }
@@ -1055,8 +1039,6 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-@media (max-width: 820px) {
   .flexSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

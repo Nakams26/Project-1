@@ -1,38 +1,39 @@
+// Adding variables for font-family and colors
 @use "variables" as *;
 
+// ---------------Styling starts here---------------//
 
-// Section styling
+// Global styling of the header
 .hIndex {
   height: 90vh;
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-.hIndex {
-// Using flex to display nav and h1 on top of each other and have the correct amount of space between them
+  // Using flex to display nav and h1 on top of each other and have the correct amount of space between them
   display: flex;
   flex-direction: column;
   justify-content: space-around;
- 
-  // Using flex on the h1 parent to center it verticlally and horizontally
-  .flexH1Index {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-  h1 {
-    z-index: 10;
-    color: $primaryWhite;
-    span {
-      display: block;
-      color: $primaryYellow;
-    }
+}
+
+// Styling the h1
+// Using flex on the h1 parent to center it verticlally and horizontally
+.flexH1Index {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  z-index: 10;
+  color: $primaryWhite;
+  span {
+    display: block;
+    color: $primaryYellow;
   }
 }
 
+// Styling the image
 //Using positioning to place the picture relative to the header
 .imgContainerHeader {
   width: 40%;
@@ -41,8 +42,4 @@
   top: 200px;
 }
 
-// Changing color of home menu
-
-.Home {
-  color: $primaryYellow;
-}
+//// ---------------Styling ends here---------------//

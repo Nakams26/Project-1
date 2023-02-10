@@ -1,5 +1,8 @@
+// Adding variables for font-family and colors
 @use "variables" as *;
 
+// ---------------Header styling starts here---------------//
+//Global header styling
 .headerContact {
   height: 75vh;
   background-image: url(../planted-final-assets/contact-header-1.jpg);
@@ -7,12 +10,12 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 30px;
-    // Using flex to display nav and h1 on top of each other and with space betwenn
+  // Using flex to display nav and h1 on top of each other and with space betwenn
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  // Using flex to display h1 at the bottom of his parent
+  // UH1 styling
   .contactH1 {
     color: $primaryYellow;
     font-size: 4rem;
@@ -21,9 +24,5 @@
       display: block;
     }
   }
-
-  .Contact {
-    color: $primaryYellow;
-  }
 }
-// Adding a parent to flex h1
+// ---------------Header styling ends here---------------//

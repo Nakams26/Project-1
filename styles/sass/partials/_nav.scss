@@ -19,7 +19,6 @@ nav ul {
   
 }
 
-
 nav ul a:hover, nav ul a:focus{
   color: $primaryYellow;
 }
@@ -30,4 +29,15 @@ nav ul a:hover, nav ul a:focus{
 .navContact,
 .navBlog {
   background-color: $primaryBlack;
+}
+.blogBlog {
+  color: $primaryYellow;
+}
+
+.Home {
+  color: $primaryYellow;
+}
+
+.Contact {
+  color: $primaryYellow;
 }

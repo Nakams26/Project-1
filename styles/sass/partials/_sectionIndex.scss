@@ -1,12 +1,15 @@
+// Adding variables for font-family and colors
 @use "variables" as *;
 
-// Section 1 styling
+// ---------------Styling starts here---------------//
 
+// ---------------First section styling starts here---------------//
+// Global section styling
 .firstSection {
   background-color: $primaryWhite;
   padding-top: 200px;
   padding-bottom: 200px;
-  h2{
+  h2 {
     text-align: center;
   }
   p {
@@ -21,82 +24,84 @@
   justify-content: center;
   align-items: center;
 }
-//-----------------End of  section 1 styling-----------------------//
+// ---------------First section styling ends here---------------//
 
-// Section 2 Styling
+// ---------------Second section styling starts here---------------//
+//Global section styling
 .secondSection {
   padding-top: 100px;
   padding-bottom: 100px;
-  
 }
-//using flex to display article and figure side by side
+
+//Styling of the first row
+
 .firstRow {
+  //using flex to display article and figure side by side
   display: flex;
   justify-content: space-between;
-
- margin-bottom: -50px;
-
-}
-.secondRow{
-  display: flex;
-  justify-content: space-between;
-align-items: flex-end;
-margin-top: -100px;
-
-}
-
-//Positioning figure
-.firstRow figure {
-   width: 52%;
-  position: relative;
-  top: -125px;
-  left: -110px;
-  img{
-    box-shadow: 22px 22px 0px -3px $primaryYellow;
+  margin-bottom: -50px;
+  //First row figure styling
+  figure {
+    width: 52%;
+    position: relative;
+    top: -125px;
+    left: -110px;
+    img {
+      box-shadow: 22px 22px 0px -3px $primaryYellow;
+    }
+  }
+  //First row article styling
+  article {
+    width: 40%;
   }
 }
-.secondRow figure {
-  width: 52%;
-  img{
-  box-shadow: -22px 22px 0px -3px $primaryYellow;
-}
-  position: relative;
-  bottom: -125px;
-  right: -110px;
- 
-}
-//Positionning article
-.firstRow article {
-   width: 40%;
-}
 
-.secondRow article {
-  width: 43%;
-  text-align: right;
- 
+//Styling of the second row
+.secondRow {
+  //using flex to display article and figure side by side
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: -100px;
+  //Second row figure styling
+  figure {
+    width: 52%;
+    img {
+      box-shadow: -22px 22px 0px -3px $primaryYellow;
+    }
+    position: relative;
+    bottom: -125px;
+    right: -110px;
+  }
+  //Second row article styling
+  article {
+    width: 43%;
+    text-align: right;
+  }
 }
+//-----------------Second section styling ends hereg-----------------------//
 
-//-----------------End of  section 2 styling-----------------------//
-
-//Section 3 styling
-
+// ---------------Third section styling starts here---------------//
+// Global section styling
 .thirdSection {
   background-color: $primaryWhite;
-  padding-top:150px;
+  padding-top: 150px;
   padding-bottom: 100px;
 }
+
 // Using flex to display articles side by side
 .flexThirdSection {
   display: flex;
 }
-
-.thirdSection  {
-  article{
-  width: 50%;
-  position: relative;
-  padding-left: 100px;
-  margin-bottom: 30px;
-}
+// Styling article
+.thirdSection {
+  article {
+    width: 50%;
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 30px;
+  }
+  // positioning the icon relative to the article and styling it
   span {
     color: $primaryBlack;
     position: absolute;
@@ -106,31 +111,31 @@ margin-top: -100px;
     padding: 10px;
   }
 }
- 
-//-----------------End of  section 3 styling-----------------------//
+//-----------------Third section styling ends here-----------------------//
 
-//Section 4 styling
- //Nothing to style here
-//-----------------End of  section 4 styling-----------------------//
+//-----------------Fourth section styling starts here-----------------------//
+//Nothing to style here
+//-----------------Fourth section styling ends here-----------------------//
 
-//Section 5 styling: About section
+//-----------------Fifth section styling starts here (About)-----------------------//
+// Global section styling
 .about {
   background-color: $primaryWhite;
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  p{
-    margin: 0;
-  }
+  // Styling of the image
   figure {
     width: 300px;
-    box-shadow: 27px 27px 0px -3px $primaryYellow;
+    box-shadow: 22px 22px 0px -3px $primaryYellow;
     margin-right: 50px;
   }
+  // Styling of the text element
   article {
     width: 65%;
     display: flex;
     flex-direction: column;
   }
+  // Styling of the button
   .button {
     width: 200px;
     margin-top: 40px;
@@ -143,19 +148,18 @@ margin-top: -100px;
   justify-content: space-between;
   align-items: center;
 }
+//-----------------Fifth section styling ends here (About)-----------------------//
 
-
-//-----------------End of  section 5 (about) styling-----------------------//
-
-// Gallery styling
-.Gallery{
-  padding-top:100px;
+//-----------------Sixth section styling starts here (Gallery)-----------------------//
+//Global section styling
+.Gallery {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 // Using flex to display images side by side
 .flexGallery {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -164,7 +168,5 @@ margin-top: -100px;
   flex-basis: 380px;
 }
 
-
-
- 
-// End of section styling
+//-----------------Sixth section styling ends here (Gallery)-----------------------//
+// ---------------Styling ends here---------------//

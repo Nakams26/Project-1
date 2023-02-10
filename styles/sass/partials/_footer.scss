@@ -1,14 +1,14 @@
+// Adding variables for font-family and colors
 @use "variables" as *;
 
+// ---------------Footer styling starts here---------------//
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: $primaryBlack;
   color: white;
   height: 5vh;
+  p{
+    margin: 0;
+  }
 }
-footer p {
-  margin: 0;
-}
+// ---------------Footer styling ends here---------------//

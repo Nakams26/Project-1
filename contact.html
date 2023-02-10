@@ -18,6 +18,7 @@
     />
   </head>
   <body>
+    <!---------------- Header starts here ---------------->
     <header class="headerContact">
       <nav class="navContact">
         <div class="wrapper">
@@ -30,16 +31,23 @@
           </ul>
         </div>
       </nav>
-      <div class="wrapper contactH1Parent">
+      <div class="wrapper">
         <h1 class="contactH1">Get in <span>touch</span></h1>
       </div>
     </header>
+    <!---------------- Header ends here ---------------->
+
+    <!---------------- Main starts here ---------------->
     <main>
+      <!--  Only one section with 2 divs. One with contact information, the other with the contact form -->
       <section class="contactSection">
+        <!-- Using flex here to display 2 divs side by side -->
         <div class="wrapper flexSection">
+          <!-- Here start the first div of the section. It contains social media link and contact informations. I'll call it contactInfos -->
           <div class="contactInfos">
+            <!-- Adding a div here that I'll use in media query -->
             <div class="flexContact">
-              <ul class="socialMediaIcon flexSocial">
+              <ul class="flexSocial">
                 <li><a href="#" class="fa fa-facebook"></a></li>
                 <li><a href="#" class="fa fa-instagram"></a></li>
                 <li><a href="#" class="fa fa-twitter"></a></li>
@@ -47,6 +55,7 @@
               </ul>
               <p class="email"><strong>info@email.com</strong></p>
             </div>
+            <!-- End of the media query div -->
             <ul class="flexAdress">
               <li>
                 <p>123 - 456- 7890</p>
@@ -62,7 +71,11 @@
               </li>
             </ul>
           </div>
+          <!-- Here ends the contactInfos part  -->
+
+          <!-- Here start the second part of the section, the contact form -->
           <form class="contactForm" action="#" method="POST" name="ContactUs">
+            <!-- Adding a div here to use flex to display name and address side by side -->
             <div class="flexForm">
               <label class="sr-only" for="Name">Name</label>
               <input type="text" id="Name" name="Name" placeholder="Name" />
@@ -74,6 +87,7 @@
                 placeholder="Email Address"
               />
             </div>
+            <!-- End of the flex div for the name and email address -->
             <label class="sr-only" for="feedback"
               >Please provide Feedback</label
             >
@@ -86,13 +100,20 @@
             ></textarea>
             <button class="button" type="submit">Submit</button>
           </form>
+          <!-- Here ends the second part of the section, the contact form -->
         </div>
+        <!-- Here ends divs I used to flex the 2 parts of the section-->
       </section>
+      <!---------------- Section ends here ---------------->
     </main>
+    <!---------------- Main ends here ---------------->
+
+    <!---------------- Footer starts here ---------------->
     <footer>
       <div class="wrapper">
         <p>Copyright 2018 © HackerYou</p>
       </div>
     </footer>
+    <!---------------- Footer ends here ---------------->
   </body>
 </html>

@@ -1,38 +1,46 @@
+// Adding variables for font-family and colors
 @use "variables" as *;
 
-// Section contact styling
-
+//----------------- styling starts here-----------------------//
+// Global section styling
 .contactSection {
-  // position: relative;
   background-color: $primaryWhite;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-}
-.contactInfos {
-  padding-bottom: 80px;
-}
-.email {
-  font-family: $primaryFont;
-  line-height: 60px;
 }
 // Using flex to display infos and contact form side by side
 .flexSection {
   display: flex;
   justify-content: space-between;
-   align-items: center;
+  align-items: center;
 }
 
-
-// Using flex to display name and adresse form side by side
-.flexForm {
+// ---------------First part of the section (contactInfos) styling starts here---------------//
+//Global styling
+.contactInfos {
+  padding-bottom: 80px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+//Using flex to display every social media icons side by side
+.flexSocial {
   display: flex;
-  justify-content: space-between;
 }
-// Styling of form
+.fa {
+  padding-right: 20px;
+  color: $secondaryGreen;
+}
+// Styling the email address
+.email {
+  font-family: $primaryFont;
+  line-height: 60px;
+}
+// ---------------First part of the section (contactInfos) styling ends here---------------//
+
+// ---------------Second part of the section (Contact form) styling starts here---------------//
+// Global Styling of the form
 .contactForm {
-   width: 70%;
+  width: 70%;
   background-color: White;
   padding: 30px;
   box-shadow: -22px 22px 0px -3px $primaryYellow;
@@ -42,33 +50,33 @@
   left: 30px;
   bottom: 250px;
 }
-
-.flexSocial {
+// Using flex to display name and adresse form side by side
+.flexForm {
   display: flex;
-}
-.fa {
-  padding-right: 20px;
-  color: $secondaryGreen;
+  justify-content: space-between;
 }
 
-// Contact form styling
-.contactForm input {
-  width: 49%;
-  border-width: 0 0 1px 0;
-  border-color: $secondaryGreen;
-  padding: 20px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  font-family: $secondaryFont;
-  line-height: 32px;
+// Contact form element styling
+.contactForm {
+  input {
+    width: 49%;
+    border-width: 0 0 1px 0;
+    border-color: $secondaryGreen;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: $secondaryFont;
+    line-height: 32px;
+  }
+  textarea {
+    border: 1px solid $secondaryGreen;
+    padding: 30px;
+    font-family: $secondaryFont;
+  }
+  button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
-.contactForm textarea {
-  border: 1px solid $secondaryGreen;
-  padding: 30px;
-  font-family: $secondaryFont;
-}
-.contactForm button {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  
-}
+// ---------------Second part of the section (Contact form) styling ends here---------------//
+//----------------- styling ends here-----------------------//

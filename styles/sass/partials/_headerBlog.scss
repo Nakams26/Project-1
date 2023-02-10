@@ -1,5 +1,9 @@
+// Adding variables for font-family and colors
+
 @use "variables" as *;
 
+//----------------- styling starts here-----------------------//
+//Global styling
 .headerBlog {
   height: 75vh;
   background-image: url(../planted-final-assets/blog-header-1.jpg);
@@ -11,14 +15,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 50px;
+
+  // Styling h1
   .blogH1 {
     color: $primaryYellow;
     font-size: 4rem;
   }
-  
-  .blogBlog {
-    color: $primaryYellow;
-  }
 }
 
-
+//----------------- styling ends here-----------------------//
