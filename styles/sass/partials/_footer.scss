@@ -3,6 +3,8 @@
 
 // ---------------Footer styling starts here---------------//
 footer {
+  display: flex;
+  align-items: center;
   text-align: center;
   background-color: $primaryBlack;
   color: white;
