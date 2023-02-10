@@ -802,6 +802,10 @@ h1 span {
   margin-bottom: 50px;
 }
 
+.commentH3 {
+  padding-bottom: 30px;
+}
+
 .comment {
   display: -webkit-box;
   display: -ms-flexbox;

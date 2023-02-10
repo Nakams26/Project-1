@@ -89,10 +89,14 @@
 }
 
 // Comment section styling
+.commentH3 {
+  padding-bottom: 30px;
+}
 // Using flex to display the user picture and his comment side by side
 .comment {
   display: flex;
   padding-bottom: 30px;
+
   h4 {
     font-size: 1rem;
   }
