@@ -299,6 +299,10 @@ figure {
   border: none;
   padding: 10px 25px;
   text-align: center;
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 nav ul {
@@ -463,6 +467,7 @@ h1 span {
   background-color: #f0efed;
   padding-top: 200px;
   padding-bottom: 200px;
+  position: relative;
 }
 .firstSection h2 {
   text-align: center;
@@ -486,6 +491,56 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hiddenSection {
+  text-align: center;
+  width: 60%;
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.95;
+  -webkit-box-shadow: 0px 0px 0px 22px #f8e71c;
+          box-shadow: 0px 0px 0px 22px #f8e71c;
+  padding: 20px;
+}
+
+.openButton {
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.openButton:hover {
+  -webkit-box-shadow: 0 1px 2px #074115;
+          box-shadow: 0 1px 2px #074115;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.openButton:active {
+  background-color: #074115;
+}
+
+.closeButton {
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 6px black;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.closeButton:hover {
+  -webkit-box-shadow: 0 1px 2px #074115;
+          box-shadow: 0 1px 2px #074115;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.closeButton:active {
+  background-color: #074115;
 }
 
 .secondSection {
@@ -936,7 +991,7 @@ footer p {
     position: absolute;
     top: 10px;
     right: 60px;
-    z-index: 100;
+    z-index: 10;
     color: #2c2c2c;
     background-color: #f0efed;
     padding: 10px;
@@ -978,8 +1033,14 @@ footer p {
     display: none;
   }
   .firstSection {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .hiddenSection {
+    width: 80%;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 0px 16px #f8e71c;
+            box-shadow: 0px 0px 0px 16px #f8e71c;
   }
   .secondSection article {
     width: 100%;

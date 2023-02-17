@@ -9,6 +9,7 @@
   background-color: $primaryWhite;
   padding-top: 200px;
   padding-bottom: 200px;
+  position: relative;
   h2 {
     text-align: center;
   }
@@ -25,7 +26,46 @@
   align-items: center;
 }
 // ---------------First section styling ends here---------------//
+// ---------------Hidden section styling starts here---------------//
+.hiddenSection {
+  text-align: center;
+  width: 60%;
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.95;
+  box-shadow: 0px 0px 0px 22px $primaryYellow;
+  padding: 20px;
+}
+// styling button that open and close the hidden section. I adapted the code from code: https://codepen.io/burntcustard/pen/BKbLvq
+.openButton {
+  box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
+    0 4px 6px black;
+    transition: 0.3s;
+}
+.openButton:hover {
+  box-shadow: 0 1px 2px $primaryGreen;
+  transform: translateY(4px);
+}
+.openButton:active {
+  background-color: $primaryGreen;
+}
 
+.closeButton {
+  box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
+  0 4px 6px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closeButton:hover {
+  box-shadow: 0 1px 2px $primaryGreen;
+  transform: translateY(4px);
+}
+.closeButton:active {
+  background-color: $primaryGreen;
+}
+// ---------------Hidden section styling ends here---------------//
 // ---------------Second section styling starts here---------------//
 //Global section styling
 .secondSection {

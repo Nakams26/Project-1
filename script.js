@@ -1,4 +1,5 @@
-// Sudo code
+
+//1. Adding a burger menu in the header for the mobile view
 
 // Add a variable for li that  I need to display when clicking on the menu
 const dynamicLi = document.querySelector('.dynamicMenu');
@@ -28,12 +29,27 @@ hamburgerMenu.addEventListener("click", function(){
 });
 
 
+//2. Opening a new section when clicking on find out more in the second section of index
 
-
+//Adding a variable for the hidden section
+const hiddenSection = document.querySelector(".hiddenSection");
   
+//Adding a variable for the button find out more section
+const openButton = document.querySelector(".openButton");
 
+//Adding a variable for the closing button
+const closeButton = document.querySelector(".closeButton");
 
+//Add a event listener to display the hidden section when the find out more button is clicked
+openButton.addEventListener("click", function(event){
+  // Prevent the page to refresh when I click the button
+  event.preventDefault();
+  // Display the hidden section
+  hiddenSection.style.display = 'block';
+});
 
-
-
-// Add a event listner to close menu when icon sclosed is clicked
+//Add a event listener to close the hidden section when the close button is clicked
+closeButton.addEventListener("click", function(){
+  // Hide the hidden section
+  hiddenSection.style.display = 'none';
+});
