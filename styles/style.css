@@ -320,6 +320,15 @@ nav ul a {
   font-size: 0.75rem;
 }
 
+.dynamicMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav ul a:hover, nav ul a:focus {
   color: #f8e71c;
 }
@@ -344,6 +353,14 @@ nav ul a:hover, nav ul a:focus {
 
 .Contact {
   color: #f8e71c;
+}
+
+.menuOpen {
+  color: transparent;
+}
+
+.menuClose {
+  color: transparent;
 }
 
 .hIndex {
@@ -881,6 +898,59 @@ footer p {
 }
 
 @media (max-width: 750px) {
+  header {
+    position: relative;
+  }
+  .dynamicMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    -webkit-transform: translatex(190%);
+            transform: translatex(190%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .dynamicMenu li {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+  .showMenu {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .menuOpen {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    z-index: 100;
+    color: #2c2c2c;
+    background-color: #f0efed;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .menuClose {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    cursor: pointer;
+    color: #2c2c2c;
+    background-color: #f0efed;
+    padding: 10px 12px 10px 12px;
+  }
   .hIndex {
     height: 65vh;
   }
@@ -900,6 +970,9 @@ footer p {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .imgContainerHeader {
     display: none;
@@ -993,13 +1066,7 @@ footer p {
   .headerBlog nav {
     background-color: transparent;
   }
-  .headerBlog ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .flexBlogSection {
+  End of blog header .flexBlogSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

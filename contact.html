@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/72d3c8dcc8.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!---------------- Header starts here ---------------->
@@ -24,10 +25,23 @@
         <div class="wrapper">
           <ul>
             <li><p class="title">Planted</p></li>
-            <li><a class="HomeContact" href="./index.html">HOME</a></li>
-            <li><a class="About" href="./index.html#About">ABOUT</a></li>
-            <li><a class="Blog" href="./blog.html">BLOG</a></li>
-            <li><a class="Contact" href="./contact.html">CONTACT</a></li>
+               <!-- A div to that contain my burger menu -->
+          <div class="hamburgerMenu">
+              <i class="fa-solid fa-bars menuOpen"></i>
+              <i class="fa-solid fa-xmark menuClose"></i>
+            </div>
+              <!-- A div that contain LI that need to be dynamic -->
+            <div class="dynamicMenu">
+              <li>
+                <a class="HomeContact" href="./index.html">HOME</a>
+              </li>
+              <li><a class="About" href="./index.html#About">ABOUT</a></li>
+              <li>
+                <a class="Blog" href="./blog.html">BLOG</a>
+              </li>
+              <li>
+                <a class="Contact" href="./contact.html">CONTACT</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -48,10 +62,10 @@
             <!-- Adding a div here that I'll use in media query -->
             <div class="flexContact">
               <ul class="flexSocial">
-                <li><a href="#" area-label="Facebook" class="fa fa-facebook"></a></li>
-                <li><a href="#" area-label="Instagram"class="fa fa-instagram"></a></li>
-                <li><a href="#" area-label="Twitter"class="fa fa-twitter"></a></li>
-                <li><a href="#" area-label="Whatspp"class="fa fa-whatsapp"></a></li>
+                <li><a href="#" aria-label="Facebook" class="fa fa-facebook"></a></li>
+                <li><a href="#" aria-label="Instagram"class="fa fa-instagram"></a></li>
+                <li><a href="#" aria-label="Twitter"class="fa fa-twitter"></a></li>
+                <li><a href="#" aria-label="Whatspp"class="fa fa-whatsapp"></a></li>
               </ul>
               <p class="email"><strong>info@email.com</strong></p>
             </div>
@@ -115,5 +129,6 @@
       </div>
     </footer>
     <!---------------- Footer ends here ---------------->
+    <script src="./script.js"></script>
   </body>
 </html>

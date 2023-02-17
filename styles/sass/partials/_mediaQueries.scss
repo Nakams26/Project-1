@@ -6,6 +6,54 @@
 // ---------------Home page media queries starts here---------------//
 
 @media (max-width: 750px) {
+//Nav media query (burger menu)
+//header as relative for buger menu and dynamic menu
+header{
+  position: relative;
+}
+//Styling the dynamic menu
+.dynamicMenu{
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  transform: translatex(190%);
+  transition: transform 0.5s;
+  li{
+ padding-right: 0;
+ padding-bottom: 0;
+ padding-top: 30px;
+  }
+}
+
+// Dynamic menu coming form the right
+.showMenu {
+  transform: translatex(0);
+  transition: transform 0.5s;
+}
+//Styling the two icons of the burger menu
+.menuOpen{
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  z-index: 100;
+  color:$primaryBlack;
+  background-color: $primaryWhite;
+  padding: 10px;
+  cursor: pointer;
+}
+.menuClose {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  cursor: pointer;
+  color: $primaryBlack;
+  background-color: $primaryWhite;
+  padding: 10px 12px 10px 12px;
+ 
+}
+//End of nav media query
   // Home page header
   .hIndex {
     height: 65vh;
@@ -13,6 +61,7 @@
     ul {
       flex-direction: column;
     }
+  
     // Resizing h1
     h1 {
       font-size: 4rem;
@@ -23,8 +72,11 @@
     // Repositionning h1
     .flexH1Index {
       justify-content: flex-end;
+      align-items: flex-end;
     }
   }
+
+
   .imgContainerHeader {
     display: none;
   }
@@ -124,11 +176,8 @@
       background-color: transparent;
     }
     // Changing flex direction to display every menus on top of each other
-    ul {
-      flex-direction: column;
-    }
   }
-  // End of blog header
+  End of blog header
 
   // Blog section
   // First part (initially on the left)
