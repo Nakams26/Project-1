@@ -625,6 +625,53 @@ h1 span {
   padding: 10px;
 }
 
+.slideSection {
+  position: relative;
+}
+
+.slideContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  -webkit-transform: 2s all ease;
+          transform: 2s all ease;
+}
+
+.slide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.previous {
+  position: absolute;
+  top: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+}
+
+.previous:hover, .next:hover, .previous:focus, .next:focus {
+  background-color: #074115;
+  color: #f8e71c;
+}
+
 .about {
   background-color: #f0efed;
   padding-top: 100px;

@@ -154,7 +154,45 @@
 //-----------------Third section styling ends here-----------------------//
 
 //-----------------Fourth section styling starts here-----------------------//
-//Nothing to style here
+.slideSection{
+  position: relative;
+}
+//Flexing the div that contain every slides
+.slideContainer{
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  transform:2s all ease;
+}
+//Display every slide side by side
+.slide{
+  flex: 1 0 100%;
+}
+//Styling previuos and next button
+.previous {
+  position: absolute;
+  top: 200px;
+  transition: 0.5s;
+  padding:10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+.next{
+  position: absolute;
+  top: 200px;
+  right: 0;
+  transition: 0.5s;
+  padding:10px;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+}
+
+.previous:hover, .next:hover, .previous:focus, .next:focus{
+  background-color: $primaryGreen;
+  color: $primaryYellow;
+}
+
 //-----------------Fourth section styling ends here-----------------------//
 
 //-----------------Fifth section styling starts here (About)-----------------------//
