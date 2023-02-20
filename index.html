@@ -196,32 +196,34 @@
       <!---------------- Third main section ends here ---------------->
 
       <!---------------- Fourth main section starts here ---------------->
-      <section class="slideSection">
-        <div class="slideContainer">
-          <div class="imgContainer slide fade">
+      <section class="carousselSection">
+        <!-- //Adding a div here that contains my 3 slides -->
+        <div class="carousselContainer">
+          <div class="slideContainer">
             <img
               src="./planted-final-assets/banner-image.jpg"
               alt="2 flower pots and a tea pot in front a lighty window"
             />
           </div>
-          <div class="imgContainer slide fade">
+          <div class="slideContainer">
             <img
               src="./planted-final-assets/freddie-marriage-UcfKYTan-LU-unsplash.jpg"
               alt="2 flower pots and a tea pot in front a lighty window"
             />
           </div>
-          <div class="imgContainer slide fade">
+          <div class="slideContainer">
             <img
               src="./planted-final-assets/katie-burkhart-REk6cxrceoQ-unsplash.jpg"
               alt="2 flower pots and a tea pot in front a lighty window"
             />
           </div>
+        </div>
+        <!-- Adding a div here that contains previuos and next buttons -->
+        <div class="carousselIcons">
           <span class="material-symbols-outlined previous">
             skip_previous
-            </span>
-            <span class="material-symbols-outlined next">
-              skip_next
-              </span>
+          </span>
+          <span class="material-symbols-outlined next"> skip_next </span>
         </div>
       </section>
       <!---------------- Fourth main section ends here ---------------->
@@ -236,7 +238,7 @@
               alt="A picture of the founder of the company in a garden"
             />
           </figure>
-          <article>
+          <article class="aboutArticle">
             <h4>Planed's founder</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -247,7 +249,17 @@
               quisquam illo animi? Officia doloribus ipsam architecto
               aspernatur.
             </p>
-            <a class="button" href="#">Find Out More</a>
+            <!-- Adding a div that contain all buttons -->
+            <div class="aboutButton">
+              <a class="button" href="#">Find Out More</a>
+              <!-- Adding a div that contain show more and less -->
+              <div class="expandIcons">
+                <span class="material-symbols-outlined more">
+                  expand_more
+                </span>
+                <span class="material-symbols-outlined less"> expand_less </span>
+              </div>
+            </div>
           </article>
         </div>
       </section>

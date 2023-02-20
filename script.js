@@ -55,11 +55,10 @@ closeButton.addEventListener("click", function () {
 });
 
 //3. Doing an image caroussel
-
 // Adding a variable for the div that contain all my slides
-const slideContainer = document.querySelector(".slideContainer");
+const carousselContainer = document.querySelector(".carousselContainer");
 // Adding a variable for every slides
-const slide = document.querySelector(".slide");
+const slide = document.querySelector(".slideContainer");
 // Adding a variable for the next  button
 const next = document.querySelector(".next");
 // Adding a variable for the previuos button
@@ -67,12 +66,50 @@ const previous = document.querySelector(".previous");
 
 //Adding a event listener on the next button
 next.addEventListener("click", function () {
+  // Adding a variable for the slides width
   const slideWidth = slide.clientWidth;
-  slideContainer.scrollLeft += slideWidth;
+  // When icon is clicked >>> scroll left of the image width size
+  carousselContainer.scrollLeft += slideWidth;
 });
 
-//Adding a event listener on the previuos button
+//Adding a event listener on the previous button
 previous.addEventListener("click", function () {
   const slideWidth = slide.clientWidth;
-  slideContainer.scrollLeft -= slideWidth;
+   // When icon is clicked >>> scroll right of the image width size
+  carousselContainer.scrollLeft -= slideWidth;
 });
+
+
+// 4 Creating a new text when clicking on more in the about section
+
+// Adding a variable on the more button
+ const more = document.querySelector(".more");
+// Adding a variable on the less button
+const less = document.querySelector(".less");
+// Adding a variable for the div that will receive the new text
+const divText = document.querySelector(".aboutArticle");
+
+//Adding an event listner that will create a p element when clicking on more
+more.addEventListener("click", function(){
+  // When click on more, I create a new P element
+  const newText = document.createElement("p");
+  // Adding a text content to this element
+  newText.textContent = `This is  a new text that explain who is the founder and give us more information about her!`;
+  //Adding a class to this element
+  newText.classList.add("newText");
+  // Adding this eleemnt as a child of the article
+  divText.appendChild(newText);
+  // Showing less button
+   less.style.zIndex= "10";
+})
+
+//Adding an event listner that will close the p element when clicking on less
+
+less.addEventListener("click",function(){
+  // Defining the new element created as variable
+  const newText = document.querySelector(".newText");
+  //When less clicked I remove the element
+  newText.remove();
+    // Hidding less button, showing more button
+  less.style.zIndex= "0";
+})

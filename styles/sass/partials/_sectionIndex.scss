@@ -154,40 +154,35 @@
 //-----------------Third section styling ends here-----------------------//
 
 //-----------------Fourth section styling starts here-----------------------//
-.slideSection{
-  position: relative;
-}
+
 //Flexing the div that contain every slides
-.slideContainer{
+.carousselContainer{
   display: flex;
-  width: 100%;
   overflow: scroll;
   scroll-behavior: smooth;
-  transform:2s all ease;
 }
 //Display every slide side by side
-.slide{
+.slideContainer{
   flex: 1 0 100%;
 }
-//Styling previuos and next button
-.previous {
-  position: absolute;
-  top: 200px;
-  transition: 0.5s;
-  padding:10px;
-  cursor: pointer;
-  border-radius: 0 5px 5px 0;
+//Styling previous and next button
+// Using flex to center icons
+.carousselIcons{
+  display: flex;
+  justify-content: center;
 }
-.next{
-  position: absolute;
-  top: 200px;
-  right: 0;
+.previous {
   transition: 0.5s;
   padding:10px;
   cursor: pointer;
   border-radius: 5px 0 0 5px;
 }
-
+.next{
+  transition: 0.5s;
+  padding:10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
 .previous:hover, .next:hover, .previous:focus, .next:focus{
   background-color: $primaryGreen;
   color: $primaryYellow;
@@ -218,6 +213,50 @@
     width: 200px;
     margin-top: 40px;
     text-align: center;
+    box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
+  0 4px 0px black;
+  }
+}
+// Styling expand buttons
+// Showig all button allign vertically
+.aboutButton{
+  display: flex;
+  align-items: flex-end;
+ 
+}
+// Styling show more and show less button
+.more{
+  position: relative;
+  z-index: 10;
+  background-color: $primaryYellow;
+  padding: 10px;
+  box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
+  0 4px 0px black;
+ cursor: pointer;
+}
+
+.less{
+  position: relative;
+  right: 50px;
+  background-color: $primaryYellow;
+  padding: 10px;
+  display: none;
+  box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
+  0 4px 0px black;
+  cursor: pointer;
+}
+// Adding an animation on the text created with Javascript
+.newText{
+  animation: down 0.3s 1;
+}
+@keyframes down{
+  0%{
+    transform: translateY(-30px);
+  
+  }
+  100%{
+    transform: translateY(0);
+    
   }
 }
 // using flex to display figure and article side by side

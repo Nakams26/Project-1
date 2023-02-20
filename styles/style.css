@@ -625,46 +625,43 @@ h1 span {
   padding: 10px;
 }
 
-.slideSection {
-  position: relative;
-}
-
-.slideContainer {
+.carousselContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   overflow: scroll;
   scroll-behavior: smooth;
-  -webkit-transform: 2s all ease;
-          transform: 2s all ease;
 }
 
-.slide {
+.slideContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
 }
 
-.previous {
-  position: absolute;
-  top: 200px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 0 5px 5px 0;
+.carousselIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.next {
-  position: absolute;
-  top: 200px;
-  right: 0;
+.previous {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px 0 0 5px;
+}
+
+.next {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
 }
 
 .previous:hover, .next:hover, .previous:focus, .next:focus {
@@ -697,8 +694,66 @@ h1 span {
   width: 200px;
   margin-top: 40px;
   text-align: center;
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
 }
 
+.aboutButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.more {
+  position: relative;
+  z-index: 10;
+  background-color: #f8e71c;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
+  cursor: pointer;
+}
+
+.less {
+  position: relative;
+  right: 50px;
+  background-color: #f8e71c;
+  padding: 10px;
+  display: none;
+  -webkit-box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
+          box-shadow: 0 4px 0 #074115, 0 4px 0 #0f902d, 0 4px 0px black;
+  cursor: pointer;
+}
+
+.newText {
+  -webkit-animation: down 0.3s 1;
+          animation: down 0.3s 1;
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .flexAbout {
   display: -webkit-box;
   display: -ms-flexbox;
