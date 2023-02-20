@@ -215,6 +215,7 @@
     text-align: center;
     box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
   0 4px 0px black;
+    cursor: default;
   }
 }
 // Styling expand buttons
@@ -228,8 +229,9 @@
 .more{
   position: relative;
   z-index: 10;
-  background-color: $primaryYellow;
-  padding: 10px;
+  background-color: $secondaryGreen;
+  color: white;
+  padding: 6.5px 10px 12.5px 10px;
   box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
   0 4px 0px black;
  cursor: pointer;
@@ -237,13 +239,22 @@
 
 .less{
   position: relative;
-  right: 50px;
+  right: 49px;
   background-color: $primaryYellow;
-  padding: 10px;
+  color: black;
+  padding: 6.5px 10px 12.5px 10px;
   display: none;
   box-shadow: 0 4px 0 $primaryGreen, 0 4px 0 $secondaryGreen,
   0 4px 0px black;
   cursor: pointer;
+}
+.more:hover, .more:focus  {
+  background-color: $primaryYellow;
+  color: black;
+}
+.less:focus, .less:hover {
+  background-color: $secondaryGreen;
+  color: white;
 }
 // Adding an animation on the text created with Javascript
 .newText{
