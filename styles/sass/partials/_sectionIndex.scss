@@ -258,7 +258,7 @@
 }
 // Adding an animation on the text created with Javascript
 .newText{
-  animation: down 0.3s 1;
+  animation: down 0.5s 1;
 }
 @keyframes down{
   0%{
@@ -280,7 +280,7 @@
 
 //-----------------Sixth section styling starts here (Gallery)-----------------------//
 //Global section styling
-.Gallery {
+.gallery {
   padding-top: 100px;
   padding-bottom: 100px;
 }

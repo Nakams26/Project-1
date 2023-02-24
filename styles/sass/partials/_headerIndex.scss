@@ -25,7 +25,7 @@
   align-items: center;
 }
 h1 {
-  z-index: 10;
+  z-index: 30;
   color: $primaryWhite;
   span {
     display: block;
@@ -40,6 +40,7 @@ h1 {
   position: absolute;
   right: 0;
   top: 200px;
+  z-index: 20;
 }
 
 //// ---------------Styling ends here---------------//

@@ -184,7 +184,7 @@ header{
     }
     // Changing flex direction to display every menus on top of each other
   }
-  End of blog header
+  //End of blog header
 
   // Blog section
   // First part (initially on the left)
@@ -219,6 +219,12 @@ header{
     }
     article {
       border: none;
+    }
+  }
+  .blogFlexForm{
+    flex-direction: column;
+    input{
+      width: 100%;
     }
   }
 }
